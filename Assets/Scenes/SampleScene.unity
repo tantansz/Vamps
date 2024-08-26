@@ -706,7 +706,7 @@ MonoBehaviour:
   speed: 2
   chaseRange: 5
   returnSpeed: 3
-  jumpForce: 1.5
+  jumpForce: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -1285,15 +1285,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_JumpForce: 700
-  m_CrouchSpeed: 0.318
   m_MovementSmoothing: 0.05
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 119
   m_GroundCheck: {fileID: 684163861}
-  m_CeilingCheck: {fileID: 570874297}
-  m_CrouchDisableCollider: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1377,6 +1374,7 @@ MonoBehaviour:
   controller: {fileID: 1253367691}
   animator: {fileID: 1253367695}
   runSpeed: 20
+  jumpCutMultiplier: 0.5
 --- !u!95 &1253367695
 Animator:
   serializedVersion: 5
