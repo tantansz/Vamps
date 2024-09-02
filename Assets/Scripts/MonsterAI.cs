@@ -5,18 +5,18 @@ using UnityEngine;
 public class MonsterAI : MonoBehaviour
 {
     public Transform player;  // Referência ao player para o monstro perseguir
-    
+
     public float speed = 2f;  // Velocidade de movimento do monstro
     public float chaseRange = 5f;  // Distância máxima em que o monstro começa a perseguir o player
     public float returnSpeed = 1f;  // Velocidade de retorno ao ponto de patrulha quando o player escapar
     public float jumpForce = 5f;  // Força de pulo do monstro
-    
+
     public LayerMask groundLayer;  // Camada para detectar o chão e os obstáculos
     public Transform groundCheck;  // Ponto de verificação para detecção do chão
     public float groundCheckRadius = 0.1f;  // Raio de verificação do chão (para determinar se o monstro está no chão)
     public Transform obstacleCheck;  // Ponto de verificação para detecção de obstáculos à frente
     public float obstacleCheckDistance = 0.5f;  // Distância para o monstro detectar obstáculos
-    
+
     public int damage = 10; // Definindo a quantidade de dano
     public float damageInterval = 1f; // Intervalo de dano do monstro
     private float nextDamageTime = 0f;  // Tempo para aplicar o próximo dano
@@ -26,9 +26,9 @@ public class MonsterAI : MonoBehaviour
     private bool isGrounded = false;  // Flag para verificar se o monstro está no chão
 
     
-    public Transform pointA;  // Ponto de patrulha A
-    public Transform pointB;  // Ponto de patrulha B
-    private bool movingToA = true;  // Flag para indicar se o monstro está indo para o ponto A
+    public float patrolMinX = -5f;  // Limite mínimo
+    public float patrolMaxX = 5f;   // Limite máximo 
+    private bool movingToRight = true; 
 
     void Start()
     {
@@ -48,35 +48,43 @@ public class MonsterAI : MonoBehaviour
         {
             ChasePlayer();
         }
-        // Se o monstro estava perseguindo, mas o player escapou, ele retorna ao ponto de patrulha mais próximo
+        // Se o monstro estava perseguindo, mas o player escapou, ele retorna à patrulha
         else if (isChasing)
         {
             ReturnToPatrol();
         }
-        // Se o monstro não está perseguindo, ele patrulha entre os pontos A e B
+        // Se o monstro não está perseguindo, ele patrulha entre os limites definidos
         else
         {
             Patrol(); 
         }
     }
 
-
-
-
 ///////////////////////////PATRULHA//////////////////////////////////////////
     void Patrol()
     {
-        // Verifica se o monstro deve se mover para o ponto A ou B
-        Transform targetPoint = movingToA ? pointA : pointB;
-        Vector2 direction = (targetPoint.position - transform.position).normalized;
-
-        // Move o monstro na direção do ponto de patrulha
-        rb.velocity = new Vector2(direction.x * speed, rb.velocity.y);
-
-        // Verifica se o monstro chegou no ponto de patrulha
-        if (Vector2.Distance(transform.position, targetPoint.position) < 0.2f)
+        // Verifica a direção da patrulha
+        if (movingToRight)
         {
-            movingToA = !movingToA;  // Alterna o destino entre A e B
+            // Move o monstro para a direita usando a velocidade de patrulha
+            rb.velocity = new Vector2(speed, rb.velocity.y);
+
+            // Se o monstro alcançar o limite máximo da patrulha, inverte a direção
+            if (transform.position.x >= patrolMaxX)
+            {
+                movingToRight = false;
+            }
+        }
+        else
+        {
+            // Move o monstro para a esquerda usando a velocidade de patrulha
+            rb.velocity = new Vector2(-speed, rb.velocity.y);
+
+            // Se o monstro alcançar o limite mínimo da patrulha, inverte a direção
+            if (transform.position.x <= patrolMinX)
+            {
+                movingToRight = true;
+            }
         }
 
         // Se o monstro está no chão e há um obstáculo à frente, ele pula
@@ -86,11 +94,6 @@ public class MonsterAI : MonoBehaviour
         }
     }
 ///////////////////////////////////////////////////////////////////////////
-
-
-
-
-
 
 /////////////////////////PERSEGUIÇÃO E RETORNO CASO NÃO VEJA MAIS O PLAYER///////////////////////////
     void ChasePlayer()
@@ -112,11 +115,11 @@ public class MonsterAI : MonoBehaviour
 
     void ReturnToPatrol()
     {
-        // Calcula o ponto de patrulha mais próximo (A ou B)
-        Transform closestPoint = Vector2.Distance(transform.position, pointA.position) < Vector2.Distance(transform.position, pointB.position) ? pointA : pointB;
+        // Calcula o ponto de patrulha mais próximo (patrolMinX ou patrolMaxX)
+        float closestPointX = Mathf.Abs(transform.position.x - patrolMinX) < Mathf.Abs(transform.position.x - patrolMaxX) ? patrolMinX : patrolMaxX;
 
         // Move o monstro de volta para o ponto de patrulha mais próximo
-        Vector2 direction = (closestPoint.position - transform.position).normalized;
+        Vector2 direction = new Vector2(closestPointX - transform.position.x, 0).normalized;
         rb.velocity = new Vector2(direction.x * returnSpeed, rb.velocity.y);
 
         // Se o monstro está no chão e há um obstáculo à frente, ele pula
@@ -126,17 +129,13 @@ public class MonsterAI : MonoBehaviour
         }
 
         // Se o monstro está próximo ao ponto de patrulha, ele retoma a patrulha normal
-        if (Vector2.Distance(transform.position, closestPoint.position) < 0.2f)
+        if (Mathf.Abs(transform.position.x - closestPointX) < 0.2f)
         {
             isChasing = false;  // Define que o monstro não está mais perseguindo o player
-            movingToA = closestPoint == pointB;  // Decide para qual ponto deve continuar a patrulha
+            movingToRight = closestPointX == patrolMinX;  // Decide para qual direção deve continuar a patrulha
         }
     }
 //////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 //////////////////////////VERIFICADORES///////////////////////////////////////
     // Verifica se o monstro está no chão, usando um círculo invisível no ponto groundCheck
