@@ -1343,7 +1343,10 @@ MonoBehaviour:
   controller: {fileID: 1253367691}
   animator: {fileID: 1253367695}
   runSpeed: 20
+  sprintMultiplier: 1.5
   jumpCutMultiplier: 0.5
+  dashSpeed: 60
+  dashDuration: 0.1
 --- !u!95 &1253367695
 Animator:
   serializedVersion: 5

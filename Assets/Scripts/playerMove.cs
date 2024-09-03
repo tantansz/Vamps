@@ -9,22 +9,28 @@ public class playerMove : MonoBehaviour
     public Animator animator;
 
     public float runSpeed = 40f;
+    public float sprintMultiplier = 1.5f; // Multiplicador de velocidade para correr ao pressionar Shift
     public float jumpCutMultiplier = 0.5f;
+
+    public float dashSpeed = 80f; // Velocidade do dash
+    public float dashDuration = 0.2f; // Duração do dash em segundos
 
     float horizontalMove = 0f;
     bool jump = false;
     bool isJumping = false;
-    
+    bool isSprinting = false; // Flag para verificar se o jogador está correndo
+    bool isDashing = false; // Flag para verificar se o jogador está dando um dash
+    float dashTime = 0f; // Tempo restante do dash
+
     #endregion
 
     #region Update
-                    //onde a gente vai chamar as funções do personagem.
-
     void Update()
     {
         HandleMovementInput();
         HandleJumpInput();
         HandleJumpCutoff();
+        HandleDash(); //entrada do dash
         UpdateAnimations();
     }
     #endregion
@@ -37,10 +43,22 @@ public class playerMove : MonoBehaviour
     #endregion
 
     #region Input Handling
-
     void HandleMovementInput()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        //se a tecla Shift está pressionada, ativar o estado de corrida
+        isSprinting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+
+        // se o Control está pressionado da o dash
+        if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
+        {
+            isDashing = true;
+            dashTime = dashDuration; // Define o tempo do dash
+        }
+
+        // Define a velocidade de movimento com base no estado (normal, corrida rápida ou dash)
+        float currentSpeed = isDashing ? dashSpeed : (isSprinting ? runSpeed * sprintMultiplier : runSpeed);
+
+        horizontalMove = Input.GetAxisRaw("Horizontal") * currentSpeed;
     }
 
     void HandleJumpInput()
@@ -61,10 +79,24 @@ public class playerMove : MonoBehaviour
         }
     }
 
+    void HandleDash()
+    {
+        // Se o jogador está dando um dash, decrementa o tempo do dash
+        if (isDashing)
+        {
+            dashTime -= Time.deltaTime; // Decrementa o tempo restante do dash
+
+            // Quando o tempo do dash termina, para o dash
+            if (dashTime <= 0f)
+            {
+                isDashing = false; // Reseta o estado de dash
+            }
+        }
+    }
+
     #endregion
 
     #region Animation
-
     void UpdateAnimations()
     {
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
@@ -72,7 +104,6 @@ public class playerMove : MonoBehaviour
     #endregion
 
     #region Movement
-
     void ApplyMovement()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
