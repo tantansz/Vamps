@@ -57,8 +57,7 @@ public class CharacterController2D : MonoBehaviour
 	#region Movimentação
 
 	public void Move(float move, bool jump)
-	{
-		
+	{	
 		if (m_Grounded || m_AirControl)
 		{
 			Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
@@ -74,7 +73,7 @@ public class CharacterController2D : MonoBehaviour
 				Flip();
 			}
 		}
-		if (m_Grounded && jump)
+		if (/*m_Grounded && */jump)
 		{
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
@@ -100,4 +99,9 @@ public class CharacterController2D : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+	public bool isGrounded()
+    {
+		return m_Grounded;
+    }
 }

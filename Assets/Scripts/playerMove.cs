@@ -22,6 +22,11 @@ public class playerMove : MonoBehaviour
     bool isDashing = false; // Flag para verificar se o jogador está dando um dash
     float dashTime = 0f; // Tempo restante do dash
 
+    float coyoteTime = 2f; //tanto de tempo permitido ao jogador pular depois de cair da plataforma
+    float coyoteTimeCounter;
+
+    float jumpBufferTimer = 0.5f; //tanto de tempo permitido ao jogador pular depois de pressionar o pulo
+    float jumpBufferCounter; //OBS: a ser adicionado
     #endregion
 
     #region Update
@@ -32,6 +37,7 @@ public class playerMove : MonoBehaviour
         HandleJumpCutoff();
         HandleDash(); //entrada do dash
         UpdateAnimations();
+        ApplyCoyoteTime();
     }
     #endregion
 
@@ -63,7 +69,7 @@ public class playerMove : MonoBehaviour
 
     void HandleJumpInput()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (coyoteTimeCounter > 0f && Input.GetButtonDown("Jump"))
         {
             jump = true;
             isJumping = true;
@@ -76,6 +82,8 @@ public class playerMove : MonoBehaviour
         {
             controller.ReduceJumpHeight(jumpCutMultiplier);
             isJumping = false;
+
+            coyoteTimeCounter = 0f;
         }
     }
 
@@ -108,6 +116,23 @@ public class playerMove : MonoBehaviour
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
         jump = false;
+    }
+
+    void ApplyCoyoteTime()
+    {
+        if (controller.isGrounded())
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+    }
+    
+    void ApplyJumpBuffer()
+    {
+        //a ser adicionado
     }
     #endregion
 }
