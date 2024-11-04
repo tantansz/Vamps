@@ -5,6 +5,7 @@ using UnityEngine;
 public class MonsterAI : MonoBehaviour
 {
     public Transform player;  // Referência ao player para o monstro perseguir
+    public Animator animator; // Pra conseguir fazer as animações
 
     public float speed = 2f;  // Velocidade de movimento do monstro
     public float chaseRange = 5f;  // Distância máxima em que o monstro começa a perseguir o player
@@ -171,6 +172,7 @@ public class MonsterAI : MonoBehaviour
         // Se o monstro colidir com o player, causar dano
         if (collision.gameObject.CompareTag("Player"))
         {
+            animator.SetTrigger("Attack"); // teste de animação
             ControlaVida controlaVida = collision.gameObject.GetComponent<ControlaVida>();
             if (controlaVida != null)
             {

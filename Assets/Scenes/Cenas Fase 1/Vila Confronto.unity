@@ -231,6 +231,7 @@ GameObject:
   - component: {fileID: 975282885}
   - component: {fileID: 975282884}
   - component: {fileID: 975282883}
+  - component: {fileID: 975282886}
   m_Layer: 0
   m_Name: ZumbieMale
   m_TagString: Untagged
@@ -279,12 +280,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1247617762, guid: 7b41d405985103d4e9a80a631985edc4, type: 3}
+  m_Sprite: {fileID: 811258029, guid: ab1a7528acb9c2b48a9bf61343af56b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.375, y: 0.90625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -318,6 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 670204387}
+  animator: {fileID: 975282886}
   speed: 2
   chaseRange: 5
   returnSpeed: 1
@@ -395,6 +397,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &975282886
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975282880}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e673290d8608fb4d8571f884e485996, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1230014180
 GameObject:
   m_ObjectHideFlags: 0
@@ -46369,6 +46392,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 942654631564423988, guid: fa05b28328ef339478a13118bfafceb8, type: 3}
+      propertyPath: dashCooldown
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1549030622373318494, guid: fa05b28328ef339478a13118bfafceb8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
