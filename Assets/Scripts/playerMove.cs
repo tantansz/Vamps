@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerMove : MonoBehaviour
 {
-    #region Variaveis
+   #region Variaveis
     public CharacterController2D controller;
     public Animator animator;
 
@@ -14,6 +14,7 @@ public class playerMove : MonoBehaviour
 
     public float dashSpeed = 80f; // Velocidade do dash
     public float dashDuration = 0.2f; // Duração do dash em segundos
+    public float dashCooldown = 10f; // Cooldown para limitar o dash, para não fica um dash infinito
 
     float horizontalMove = 0f;
     bool jump = false;
@@ -22,11 +23,14 @@ public class playerMove : MonoBehaviour
     bool isDashing = false; // Flag para verificar se o jogador está dando um dash
     float dashTime = 0f; // Tempo restante do dash
 
-    float coyoteTime = 0.1f; //tanto de tempo permitido ao jogador pular depois de cair da plataforma
+    float coyoteTime = 0.1f; // Tanto de tempo permitido ao jogador pular depois de cair da plataforma
     float coyoteTimeCounter;
 
-    float jumpBufferTimer = 0.05f; //tanto de tempo permitido ao jogador pular depois de pressionar o pulo
-    float jumpBufferCounter; //OBS: a ser adicionado
+    float jumpBufferTimer = 0.05f; // Tanto de tempo permitido ao jogador pular depois de pressionar o pulo
+    float jumpBufferCounter;
+
+    bool hasAirDashed = false; // Flag para verificar se o dash no ar já foi utilizado
+    float dashCooldownTimer = 0f; // Timer para controlar o cooldown do dash no chão
     #endregion
 
     #region Update
@@ -35,10 +39,16 @@ public class playerMove : MonoBehaviour
         HandleMovementInput();
         HandleJumpInput();
         HandleJumpCutoff();
-        HandleDash(); //entrada do dash
+        HandleDash(); // Entrada do dash
         UpdateAnimations();
         ApplyCoyoteTime();
         ApplyJumpBuffer();
+
+        // Atualiza o cooldown do dash no chão, decrementando a cada frame
+        if (dashCooldownTimer > 0f)
+        {
+            dashCooldownTimer -= Time.deltaTime;
+        }
     }
     #endregion
 
@@ -52,19 +62,28 @@ public class playerMove : MonoBehaviour
     #region Input Handling
     void HandleMovementInput()
     {
-        //se a tecla Shift está pressionada, ativar o estado de corrida
+        // Se a tecla Shift está pressionada, ativar o estado de corrida
         isSprinting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
 
-        // se o Control está pressionado da o dash
+        // Se Control está pressionado, inicia o dash com base nas condições
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
         {
-            isDashing = true;
-            dashTime = dashDuration; // Define o tempo do dash
+            // Dash no ar (somente uma vez)
+            if (!controller.isGrounded() && !hasAirDashed && !isDashing)
+            {
+                StartDash(); 
+                hasAirDashed = true; // Marca o dash no ar como usado
+            }
+            // Dash no chão com cooldown
+            else if (controller.isGrounded() && dashCooldownTimer <= 0f && !isDashing)
+            {
+                StartDash(); 
+                dashCooldownTimer = dashCooldown; // Reinicia o cooldown do dash no chão
+            }
         }
 
         // Define a velocidade de movimento com base no estado (normal, corrida rápida ou dash)
         float currentSpeed = isDashing ? dashSpeed : (isSprinting ? runSpeed * sprintMultiplier : runSpeed);
-
         horizontalMove = Input.GetAxisRaw("Horizontal") * currentSpeed;
     }
 
@@ -103,8 +122,19 @@ public class playerMove : MonoBehaviour
                 isDashing = false; // Reseta o estado de dash
             }
         }
+
+        // Reseta a habilidade de dash no ar quando o jogador toca o chão
+        if (controller.isGrounded())
+        {
+            hasAirDashed = false; // Permite que o jogador faça um novo dash no ar ao pular novamente
+        }
     }
 
+    void StartDash()
+    {
+        isDashing = true; // Ativa o estado de dash
+        dashTime = dashDuration; // Define o tempo de duração do dash
+    }
     #endregion
 
     #region Animation
