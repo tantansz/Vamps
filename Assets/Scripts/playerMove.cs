@@ -9,7 +9,14 @@ public class playerMove : MonoBehaviour
 
     public float runSpeed = 40f;
 
-    float horizontalMove = 0f;
+    float horizontalMove;   // ENCAPSULAMENTO ---------------------------------
+
+    public float _horizontalMove{
+     get {return horizontalMove; }
+     set {horizontalMove = value;}
+    } 
+   
+
     bool jump = false;
 
     void Update()
