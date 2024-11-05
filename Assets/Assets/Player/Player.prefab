@@ -78,10 +78,7 @@ GameObject:
   - component: {fileID: 942654631564423988}
   - component: {fileID: 7436799287678979317}
   - component: {fileID: 8439397935378895281}
-<<<<<<< HEAD
   - component: {fileID: 4994186048079590573}
-=======
->>>>>>> 5a2c6912ee7a31abdffadfe74a90f6d4c5f59c9f
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -260,15 +257,11 @@ MonoBehaviour:
   controller: {fileID: 8509690911400502830}
   animator: {fileID: 7436799287678979317}
   runSpeed: 20
-<<<<<<< HEAD
   sprintMultiplier: 1.5
   jumpCutMultiplier: 0.5
   dashSpeed: 80
   dashDuration: 0.2
   horizontalMove: 0
-=======
-  jumpCutMultiplier: 0.5
->>>>>>> 5a2c6912ee7a31abdffadfe74a90f6d4c5f59c9f
 --- !u!95 &7436799287678979317
 Animator:
   serializedVersion: 5
@@ -303,7 +296,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barra: {fileID: 0}
-<<<<<<< HEAD
 --- !u!114 &4994186048079590573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,5 +308,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba43abd172846c94aadf55c7a5f020b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> 5a2c6912ee7a31abdffadfe74a90f6d4c5f59c9f
