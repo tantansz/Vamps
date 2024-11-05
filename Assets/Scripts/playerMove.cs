@@ -16,7 +16,14 @@ public class playerMove : MonoBehaviour
     public float dashDuration = 0.2f; // Duração do dash em segundos
     public float dashCooldown = 10f; // Cooldown para limitar o dash, para não fica um dash infinito
 
-    float horizontalMove = 0f;
+    float horizontalMove;   // ENCAPSULAMENTO ---------------------------------
+
+    public float _horizontalMove{
+     get {return horizontalMove; }
+     set {horizontalMove = value;}
+    } 
+   
+
     bool jump = false;
     bool isJumping = false;
     bool isSprinting = false; // Flag para verificar se o jogador está correndo
