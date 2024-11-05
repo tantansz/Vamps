@@ -16,11 +16,11 @@ public class playerMove : MonoBehaviour
     public float dashDuration = 0.2f; // Duração do dash em segundos
     public float dashCooldown = 10f; // Cooldown para limitar o dash, para não fica um dash infinito
 
-    float horizontalMove = 0f;
+    public float horizontalMove;
     bool jump = false;
-    bool isJumping = false;
-    bool isSprinting = false; // Flag para verificar se o jogador está correndo
-    bool isDashing = false; // Flag para verificar se o jogador está dando um dash
+    public bool isJumping = false;
+    public bool isSprinting = false; // Flag para verificar se o jogador está correndo
+    public bool isDashing = false; // Flag para verificar se o jogador está dando um dash
     float dashTime = 0f; // Tempo restante do dash
 
     float coyoteTime = 0.1f; // Tanto de tempo permitido ao jogador pular depois de cair da plataforma
