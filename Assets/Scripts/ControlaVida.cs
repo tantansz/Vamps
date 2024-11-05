@@ -6,50 +6,29 @@ public class ControlaVida : MonoBehaviour
 {
     public BarraDeVida barra;
     private float vida = 100;
+    
 
+    // Start is called before the first frame update
     void Start()
     {
-        // Ajusta a vida no início conforme o valor definido e atualiza a barra de vida
+        //estou usando a função para ajustar a vida no inicio conforme eu alterar o valor da vida, e a barra sempre fica completa.
+        vida = 100.0f;
         barra.ColocarVidaMaxima(vida);
     }
 
+    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)) // Recupera a vida apertando F
+        if (Input.GetKeyDown(KeyCode.F)) // A condição é que toda vez que receber um input do "F" ele perde 10 de vida, alterar futuramente essa tecla "F" para quando ele tomar um dano de um objeto.
         {
-            TomarDano(10.0f);
+            vida -= 10.0f;
+            barra.AlterarVida(vida);
         }
 
-        if (Input.GetKeyDown(KeyCode.R)) // recupera a vida apertando R
+        if (Input.GetKeyDown(KeyCode.R)) //Quando eu aperta R eu recupero vida, para uma possivel mecanica de usar um item de vida ou um objeto que recupera vida, alterando apenas o parametro que vai receber.
         {
-            RecuperarVida(10.0f);  
+            vida += 10.0f;
+            barra.AlterarVida(vida);
         }
-    }
-
-    public void TomarDano(float dano)
-    {
-        vida -= dano;  
-        barra.AlterarVida(vida); 
-
-        if (vida <= 0)
-        {
-            Morrer();  // Chama a função Morrer se a vida chegar a 0
-        }
-    }
-
-    public void RecuperarVida(float quantidade)
-    {
-        vida += quantidade;  
-        if (vida > barra.slider.maxValue)
-        {
-            vida = barra.slider.maxValue;  // Garante que a vida não exceda o máximo da barra slider
-        }
-        barra.AlterarVida(vida);  
-    }
-
-    void Morrer()
-    {
-        Debug.Log("Player morreu!");  // Mensagem para aparecer no terminal avisando que morreu 
-        Destroy(gameObject);  // Destroi o player
     }
 }
