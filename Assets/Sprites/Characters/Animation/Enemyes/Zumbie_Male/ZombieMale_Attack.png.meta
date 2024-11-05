@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +121,1078 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ZombieMale_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1918
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726529b18dafb05448e149d48cd49885
+      internalID: 500108335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1918
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0abe74669dec7498b4616c8c45c018
+      internalID: -1680201475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1918
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa08c0890d0ee34e85bf5eee57db5be
+      internalID: 662924387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1918
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9817e5939bbe36d4dab6ff4d2a8d0601
+      internalID: -1143902689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 1918
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6f0e7178f97ea4db2d1835b83dd223
+      internalID: -1055450412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 1918
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9091ac5282e004aa89c6614e0fe4c0
+      internalID: 236795073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 1918
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eaa0a7d98f09ba40bba216ca9e115d8
+      internalID: -970483645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 1918
+        width: 22
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb6c31ff7acb754d9e4b45f73bf94fd
+      internalID: 1162733592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1717
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6006d718a8995c4c82f3cb8ddead2ba
+      internalID: 1698206079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1662
+        width: 19
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0738a1bda46dae04695d587403cbf8c2
+      internalID: 1526621156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1662
+        width: 19
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f8b95cd8f454e48908197cba77abda
+      internalID: 186072776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1662
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc539d4377aca644bbe7bc9eb344e9a9
+      internalID: -1243069889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_12
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 1662
+        width: 17
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2cf2562ef154a4fa2aa9bbb7994d51
+      internalID: -430101716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1662
+        width: 16
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e34169e55ba6ab46a63248cdb7cd59b
+      internalID: -864717636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_14
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1661
+        width: 16
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb84b941358d0947a32490ff2f7d9a4
+      internalID: 623349373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_15
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 1661
+        width: 16
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4bbad63577c7e4bbeafa41c9836670
+      internalID: -2130667895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_16
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 1661
+        width: 16
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57fa563122507f44bab3cec29ea2d8bd
+      internalID: 1289531269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_17
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1405
+        width: 16
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e662c8424199bc543bd0b64d4605b000
+      internalID: -674951439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_18
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1405
+        width: 17
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca745a294016d441a0bc5669b9d8870
+      internalID: 1685836233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_19
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1405
+        width: 17
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b6e15de6becc04dba7e112039d07b5
+      internalID: 862967234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_20
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1405
+        width: 19
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e0733426ba62b4180e8a6b3b4f9041
+      internalID: -1439536872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_21
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1405
+        width: 19
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f390f9e0bf6cef44a0c2c934a7b580f
+      internalID: 1699101710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_22
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1405
+        width: 19
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069cff1d59636c44692805746a75825c
+      internalID: -1553932387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_23
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 1405
+        width: 20
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee48127163d00043b47cab412f3ba9d
+      internalID: 165824066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_24
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 1405
+        width: 20
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d06985aee83664fad1ad9c13c0a1cc
+      internalID: 1486173168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_25
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1149
+        width: 20
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8fa808de2e08c047a71818eab4860fb
+      internalID: -2082630344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_26
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1149
+        width: 21
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12926ee53e64c29459bc34b88b7ea92c
+      internalID: -1184374337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_27
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1149
+        width: 20
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de013aeee074f3478bfc300e428bcfb
+      internalID: 1425537856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_28
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1149
+        width: 20
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc2f8964f7a22e488c96fc98b859b87
+      internalID: -1472804218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_29
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1149
+        width: 19
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bbfbc05024af2488d05ab9130b35dd
+      internalID: -697942511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_30
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 1149
+        width: 19
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b953485dba1a744e8082a12d6d7da22
+      internalID: 751089772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_31
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 1149
+        width: 18
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85f250fc32579f469c08c2a0a6be6f1
+      internalID: 806864891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_32
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 1149
+        width: 19
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2c387eb3bd7764384f87f4f3705a1f
+      internalID: -1170655495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_33
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 893
+        width: 19
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733682c7d43b5174f8e3d63363ea55e5
+      internalID: 1650703227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_34
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 893
+        width: 22
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a954c03fe39292d448bbc5f0867d179f
+      internalID: -797332112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_35
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 893
+        width: 24
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5460f7f5475291c479367308254b5510
+      internalID: -514356484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_36
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 893
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310c521af03b0094d9134849c55f567b
+      internalID: -1354117603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_37
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 894
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02683ed2b92e1c48a949219de68777d
+      internalID: 916439014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_38
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 894
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e847f903064501d4887674d5ba03a6e7
+      internalID: 857985397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_39
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 894
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c56b6fb5462ce94fa8af6bb33a47bbb
+      internalID: -82113888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_40
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 894
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b1073d4d98e44499391cc2af0faa99
+      internalID: -592781068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_41
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 638
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bb17f514b75e248904246a36cea277
+      internalID: 1217066588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_42
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 638
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ea0def48e08a54b8cd79b0a2a607d3
+      internalID: -1979650662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_43
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 638
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb8c184dd202b949b48531be203d83f
+      internalID: 1586827446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_44
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 638
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b65d2e33bfabf4ebeab132669791d6
+      internalID: -512314555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_45
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 638
+        width: 24
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e421d55074c2ae2468225e11a411c72a
+      internalID: 127317621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_46
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 638
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239aea1b0ca080b4cb0d3a372bffa49e
+      internalID: -1929782572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_47
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 638
+        width: 23
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fc2c6c90bb5f74abc78449273a1a98
+      internalID: 1425907421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_48
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 638
+        width: 22
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1d5dc643383c14b8f715a0bfb346ad
+      internalID: -1542942667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_49
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 382
+        width: 22
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76a86c56a0b13a478b3841fe53c39b3
+      internalID: -1476970492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZombieMale_Attack_50
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 382
+        width: 21
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4714f0d9313c3bf4d844c76a794a82d2
+      internalID: 1123102041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +1203,58 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ZombieMale_Attack_0: 500108335
+      ZombieMale_Attack_1: -1680201475
+      ZombieMale_Attack_10: 186072776
+      ZombieMale_Attack_11: -1243069889
+      ZombieMale_Attack_12: -430101716
+      ZombieMale_Attack_13: -864717636
+      ZombieMale_Attack_14: 623349373
+      ZombieMale_Attack_15: -2130667895
+      ZombieMale_Attack_16: 1289531269
+      ZombieMale_Attack_17: -674951439
+      ZombieMale_Attack_18: 1685836233
+      ZombieMale_Attack_19: 862967234
+      ZombieMale_Attack_2: 662924387
+      ZombieMale_Attack_20: -1439536872
+      ZombieMale_Attack_21: 1699101710
+      ZombieMale_Attack_22: -1553932387
+      ZombieMale_Attack_23: 165824066
+      ZombieMale_Attack_24: 1486173168
+      ZombieMale_Attack_25: -2082630344
+      ZombieMale_Attack_26: -1184374337
+      ZombieMale_Attack_27: 1425537856
+      ZombieMale_Attack_28: -1472804218
+      ZombieMale_Attack_29: -697942511
+      ZombieMale_Attack_3: -1143902689
+      ZombieMale_Attack_30: 751089772
+      ZombieMale_Attack_31: 806864891
+      ZombieMale_Attack_32: -1170655495
+      ZombieMale_Attack_33: 1650703227
+      ZombieMale_Attack_34: -797332112
+      ZombieMale_Attack_35: -514356484
+      ZombieMale_Attack_36: -1354117603
+      ZombieMale_Attack_37: 916439014
+      ZombieMale_Attack_38: 857985397
+      ZombieMale_Attack_39: -82113888
+      ZombieMale_Attack_4: -1055450412
+      ZombieMale_Attack_40: -592781068
+      ZombieMale_Attack_41: 1217066588
+      ZombieMale_Attack_42: -1979650662
+      ZombieMale_Attack_43: 1586827446
+      ZombieMale_Attack_44: -512314555
+      ZombieMale_Attack_45: 127317621
+      ZombieMale_Attack_46: -1929782572
+      ZombieMale_Attack_47: 1425907421
+      ZombieMale_Attack_48: -1542942667
+      ZombieMale_Attack_49: -1476970492
+      ZombieMale_Attack_5: 236795073
+      ZombieMale_Attack_50: 1123102041
+      ZombieMale_Attack_6: -970483645
+      ZombieMale_Attack_7: 1162733592
+      ZombieMale_Attack_8: 1698206079
+      ZombieMale_Attack_9: 1526621156
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
