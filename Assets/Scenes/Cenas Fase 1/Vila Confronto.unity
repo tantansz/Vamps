@@ -280,12 +280,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 811258029, guid: ab1a7528acb9c2b48a9bf61343af56b6, type: 3}
+  m_Sprite: {fileID: 1247617762, guid: 7c66c5599495c40449cf9be41abc5236, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.375, y: 0.90625}
+  m_Size: {x: 0.375, y: 0.796875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -22404,6 +22404,23 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1596871526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3724080940698235779, guid: fa05b28328ef339478a13118bfafceb8, type: 3}
+  m_PrefabInstance: {fileID: 2124499676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1596871534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596871526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23788517eea817045b65e1f59bbb5bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1810988422
 GameObject:
   m_ObjectHideFlags: 0
@@ -46393,6 +46410,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 942654631564423988, guid: fa05b28328ef339478a13118bfafceb8, type: 3}
+      propertyPath: runSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 942654631564423988, guid: fa05b28328ef339478a13118bfafceb8, type: 3}
       propertyPath: dashCooldown
       value: 2
       objectReference: {fileID: 0}
@@ -46455,7 +46476,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3724080940698235779, guid: fa05b28328ef339478a13118bfafceb8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1596871534}
   m_SourcePrefab: {fileID: 100100000, guid: fa05b28328ef339478a13118bfafceb8, type: 3}
 --- !u!1 &563697823623755771
 GameObject:
@@ -46555,7 +46579,7 @@ Transform:
   m_GameObject: {fileID: 7556320799101221508}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.31079626, y: 2.3018546, z: -10}
+  m_LocalPosition: {x: 0.31064153, y: 2.3018546, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
