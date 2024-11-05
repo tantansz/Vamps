@@ -1,0 +1,1768 @@
+fileFormatVersion: 2
+guid: 80c9a4bc148cd4f48b4cf3907e9a537e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_0"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 2429
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65d97a6c5f054644856bbeedb7744f3
+      internalID: 756566889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_1"
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 2429
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4abdadd4abfeb428351267bbbc01da
+      internalID: 1318271914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_2"
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2429
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78be622cca08a854381373ace838827c
+      internalID: 1143016294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_3"
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 2429
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23474ec10cc3ced4e83a433f1efe2f74
+      internalID: 720478781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_4"
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 2429
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29271754a0b2c484c8fed95397f7b9b0
+      internalID: -1643784187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_5"
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 2429
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921951b8ff608024d9a4fd159d617e9e
+      internalID: -998178390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_6"
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 2429
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2fca2d87215a21408ec07eeab73d6cf
+      internalID: 1854666103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_7"
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 2429
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c69bd85eca502547903a506459d3fcf
+      internalID: 1768330446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_8"
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 2430
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377081295d911264985c0d0182b26d22
+      internalID: -1500172705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_9"
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 2431
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843aead91c5c9d544878e2abc07a771e
+      internalID: -1163082607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_10"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 2175
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a0a8317ebe2f946b3143ab3e0be11d
+      internalID: -1414609795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_11"
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 2176
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394e489d73ab68345a75a9774d2623e2
+      internalID: -1781596299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_12"
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2178
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ffe91bf02fb91541a8728032267771d
+      internalID: -287230014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_13"
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 2176
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6507ea745c557dc41ab2262e63cff8b5
+      internalID: 1397961936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_14"
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 2176
+        width: 28
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a22f4e2f35adbb458e732ea5257af91
+      internalID: 2126475591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_15"
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 2176
+        width: 28
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54dccf92ef104204fa86bd32f1923041
+      internalID: -749547469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_16"
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 2176
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8164ceb90dde4d54792495b0ac5dafab
+      internalID: -222272615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_17"
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 2176
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c95a54272c29b49a4a773cd7ffff87
+      internalID: 1767822273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_18"
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 2176
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9104366bc45494193ee076a0d350ab
+      internalID: 890422196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_19"
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 2175
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655c362e28f6c4b44a6b15942cfe2259
+      internalID: 1808027946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_20"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1919
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2110cfa6904f2a342bb6a7e4371b844b
+      internalID: -48405822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_21"
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1919
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96cac18df8362a4bbcd0056f84136b7
+      internalID: 191900961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_22"
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1919
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85c0e1035f36704d8e499dd4a146b41
+      internalID: -1464435304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_23"
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1919
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ef892128223b8418b59c44820ba745
+      internalID: 1203049685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_24"
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1919
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90265d806ad17c4d8857cb4ced4eedc
+      internalID: -1587421903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_25"
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1919
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786d477e921a52e488ea12e84faf08a6
+      internalID: 327447726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_26"
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 1919
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fe0a7b7c3332043af56b650bacb9a4
+      internalID: 200619957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_27"
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1919
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee157c94a40a6640b763a3cbc500520
+      internalID: -718954525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_28"
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 1919
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5473ff99adc2604f92775ce4490f8fc
+      internalID: 740110466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_29"
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 1919
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc015f7655eace4ab77ed0929d84c38
+      internalID: 1862301210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_30"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1663
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57111b3a4b952a046892f452f67ab098
+      internalID: 939899060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_31"
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1663
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25583c1573228a2429070b3ab762a99b
+      internalID: -1348622956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_32"
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1663
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73111bd34ce344e4a885e195acec4a0e
+      internalID: 1712640255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_33"
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1663
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19921336a991a15428ddc00c63bc3665
+      internalID: 1892676467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_34"
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1664
+        width: 28
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ab4a6e7c55e66488eceb3092a636e1
+      internalID: 1382042343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_35"
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1664
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98bfd412ab39f84a82dc5e9695fd023
+      internalID: 759006625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_36"
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 1664
+        width: 28
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce942d8e6a7452439350a71f433f9e5
+      internalID: -695860929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_37"
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1664
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742283ecac1bb7f40a420b424b07afe2
+      internalID: 776150701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_38"
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 1664
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd055b89dbe35a4f870e44668ead6cb
+      internalID: -650163940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_39"
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 1664
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e500bb4264820ca4f9a89b90e10ac9ee
+      internalID: 2092891405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_40"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1408
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f8a892a27c6bc4790311f902d94428
+      internalID: -1645838727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_41"
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1408
+        width: 28
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd6fb6a35a466b4696d3e5e3b8a4be3
+      internalID: -1737796678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_42"
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1408
+        width: 27
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21dbf95fadc6df14eacae926f81e2c57
+      internalID: -342618167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_43"
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1406
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba02a106c89caa4c9e049ef1210feaa
+      internalID: -1753680671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_44"
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1406
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e91558cccaa25438c000c3b6d42b8f
+      internalID: -664344325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_45"
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1406
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21636344186b2a142a40a7820ad97d2c
+      internalID: -495563063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_46"
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 1406
+        width: 28
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6013e3095fb47d46b45a9beeee99895
+      internalID: 1848157190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_47"
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1406
+        width: 27
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4ebd48ce3dbdc4981cf27b80b84ced
+      internalID: -364122052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_48"
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 1405
+        width: 29
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1428344a7b5874aaaf787d0971cb0d
+      internalID: 1241696014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_49"
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 1406
+        width: 28
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b86c4a35bea4449bdd69fb3a797e8c
+      internalID: -1190620877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_50"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1150
+        width: 28
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921913700f7f78245b36ad826c4b3098
+      internalID: -1339370558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_51"
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1150
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef7e50c9cceb2384bb85149d38cb6bc8
+      internalID: 1418666182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_52"
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1150
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2228d2fc0d63b4ba8c0bb7daf1e064
+      internalID: -1924472308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_53"
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1151
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62442b08c9b913d41b81ab6f770c71b8
+      internalID: -1749605432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_54"
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1151
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d90f02158e1b8b4d99a6020390b1f9a
+      internalID: 1425329679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_55"
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1151
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a2edba99c42854b876566e0b7d11a5
+      internalID: -426165770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_56"
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 1151
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e794b989cf100844a6f8bc4174be01b
+      internalID: -1999911231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_57"
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1151
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5e10c53714eaa45b19587aca6bdcf2
+      internalID: -43460567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_58"
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 1151
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00118110a2086341b701357c37cf2ea
+      internalID: 280178434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_59"
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 1151
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b54162d09b88d40bf4ff3dbdd94d8b
+      internalID: 90405653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_60"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 895
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd213dec2612a2e47a11a3a60cee70af
+      internalID: -1613193960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_61"
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 895
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c8defe48b20a149bcea68418d93491
+      internalID: -966074380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_62"
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 895
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8517d32312f664eab687a4634f28b1
+      internalID: -1865034820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_63"
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 894
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a369586f1c7303845b176b460cb6fc7b
+      internalID: 285608698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_64"
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 894
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4192899a5aecd49bbc87478e8021c1
+      internalID: 626165540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_65"
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 894
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e604fab816a9149b30063a1ed9d03a
+      internalID: 98459936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_66"
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 894
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82eefd787e4759045b7ef7e0d20f87dd
+      internalID: 2066211635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_67"
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 894
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6313d642eef994e8e19e7cf833a573
+      internalID: -1807737376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_68"
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 894
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1471b2c297ebd254e9c118662f850968
+      internalID: 1534873728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_69"
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 894
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a30706fb26acd43a27e6544384430e
+      internalID: -871578192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_70"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 638
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428cb3dfae8e05e40863093becded635
+      internalID: -1894049888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_71"
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 638
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ef6d9b1a57e3c41ae02afc9e71a96a
+      internalID: -160852212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_72"
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 638
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b470822cd0a9e647960c2e16b753163
+      internalID: -1848334973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mapa_persegui\xE7\xE3o_73"
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 638
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9299bd7db10f4194e858b2377d2620ff
+      internalID: -863667057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "Mapa_persegui\xE7\xE3o_0": 756566889
+      "Mapa_persegui\xE7\xE3o_1": 1318271914
+      "Mapa_persegui\xE7\xE3o_10": -1414609795
+      "Mapa_persegui\xE7\xE3o_11": -1781596299
+      "Mapa_persegui\xE7\xE3o_12": -287230014
+      "Mapa_persegui\xE7\xE3o_13": 1397961936
+      "Mapa_persegui\xE7\xE3o_14": 2126475591
+      "Mapa_persegui\xE7\xE3o_15": -749547469
+      "Mapa_persegui\xE7\xE3o_16": -222272615
+      "Mapa_persegui\xE7\xE3o_17": 1767822273
+      "Mapa_persegui\xE7\xE3o_18": 890422196
+      "Mapa_persegui\xE7\xE3o_19": 1808027946
+      "Mapa_persegui\xE7\xE3o_2": 1143016294
+      "Mapa_persegui\xE7\xE3o_20": -48405822
+      "Mapa_persegui\xE7\xE3o_21": 191900961
+      "Mapa_persegui\xE7\xE3o_22": -1464435304
+      "Mapa_persegui\xE7\xE3o_23": 1203049685
+      "Mapa_persegui\xE7\xE3o_24": -1587421903
+      "Mapa_persegui\xE7\xE3o_25": 327447726
+      "Mapa_persegui\xE7\xE3o_26": 200619957
+      "Mapa_persegui\xE7\xE3o_27": -718954525
+      "Mapa_persegui\xE7\xE3o_28": 740110466
+      "Mapa_persegui\xE7\xE3o_29": 1862301210
+      "Mapa_persegui\xE7\xE3o_3": 720478781
+      "Mapa_persegui\xE7\xE3o_30": 939899060
+      "Mapa_persegui\xE7\xE3o_31": -1348622956
+      "Mapa_persegui\xE7\xE3o_32": 1712640255
+      "Mapa_persegui\xE7\xE3o_33": 1892676467
+      "Mapa_persegui\xE7\xE3o_34": 1382042343
+      "Mapa_persegui\xE7\xE3o_35": 759006625
+      "Mapa_persegui\xE7\xE3o_36": -695860929
+      "Mapa_persegui\xE7\xE3o_37": 776150701
+      "Mapa_persegui\xE7\xE3o_38": -650163940
+      "Mapa_persegui\xE7\xE3o_39": 2092891405
+      "Mapa_persegui\xE7\xE3o_4": -1643784187
+      "Mapa_persegui\xE7\xE3o_40": -1645838727
+      "Mapa_persegui\xE7\xE3o_41": -1737796678
+      "Mapa_persegui\xE7\xE3o_42": -342618167
+      "Mapa_persegui\xE7\xE3o_43": -1753680671
+      "Mapa_persegui\xE7\xE3o_44": -664344325
+      "Mapa_persegui\xE7\xE3o_45": -495563063
+      "Mapa_persegui\xE7\xE3o_46": 1848157190
+      "Mapa_persegui\xE7\xE3o_47": -364122052
+      "Mapa_persegui\xE7\xE3o_48": 1241696014
+      "Mapa_persegui\xE7\xE3o_49": -1190620877
+      "Mapa_persegui\xE7\xE3o_5": -998178390
+      "Mapa_persegui\xE7\xE3o_50": -1339370558
+      "Mapa_persegui\xE7\xE3o_51": 1418666182
+      "Mapa_persegui\xE7\xE3o_52": -1924472308
+      "Mapa_persegui\xE7\xE3o_53": -1749605432
+      "Mapa_persegui\xE7\xE3o_54": 1425329679
+      "Mapa_persegui\xE7\xE3o_55": -426165770
+      "Mapa_persegui\xE7\xE3o_56": -1999911231
+      "Mapa_persegui\xE7\xE3o_57": -43460567
+      "Mapa_persegui\xE7\xE3o_58": 280178434
+      "Mapa_persegui\xE7\xE3o_59": 90405653
+      "Mapa_persegui\xE7\xE3o_6": 1854666103
+      "Mapa_persegui\xE7\xE3o_60": -1613193960
+      "Mapa_persegui\xE7\xE3o_61": -966074380
+      "Mapa_persegui\xE7\xE3o_62": -1865034820
+      "Mapa_persegui\xE7\xE3o_63": 285608698
+      "Mapa_persegui\xE7\xE3o_64": 626165540
+      "Mapa_persegui\xE7\xE3o_65": 98459936
+      "Mapa_persegui\xE7\xE3o_66": 2066211635
+      "Mapa_persegui\xE7\xE3o_67": -1807737376
+      "Mapa_persegui\xE7\xE3o_68": 1534873728
+      "Mapa_persegui\xE7\xE3o_69": -871578192
+      "Mapa_persegui\xE7\xE3o_7": 1768330446
+      "Mapa_persegui\xE7\xE3o_70": -1894049888
+      "Mapa_persegui\xE7\xE3o_71": -160852212
+      "Mapa_persegui\xE7\xE3o_72": -1848334973
+      "Mapa_persegui\xE7\xE3o_73": -863667057
+      "Mapa_persegui\xE7\xE3o_8": -1500172705
+      "Mapa_persegui\xE7\xE3o_9": -1163082607
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
