@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,469 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_0
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1150
+        width: 19
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b451703c560fbc04094d4b4ee88441dd
+      internalID: -1549235580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_1
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1151
+        width: 22
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a6a75c14a331946b0ac5d3ae36e0d9
+      internalID: 1123580213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_2
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1151
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b657557b91d25b4e8aabc8452a58258
+      internalID: 333378201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_3
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1151
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2105a995c63c3a429e444a5d5e982ce
+      internalID: -1037857284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_4
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1151
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f193fd786125bea4c9ca683175ead626
+      internalID: -2071074706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 895
+        width: 23
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142a3bb9aa521e444ab9269012298b19
+      internalID: -1621204174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_6
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 895
+        width: 21
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ade7de984721e408ee5ecfb42ab1ec
+      internalID: -135547072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_7
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 895
+        width: 21
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a33f4c2f5c415488937d31330e0af6
+      internalID: 1779327220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_8
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 895
+        width: 21
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0389faf2dfea74c9e062ea6810e9f8
+      internalID: -18550299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_9
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 896
+        width: 21
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051fe057296a414409fb1b7966dadc03
+      internalID: -1475626012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_10
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 640
+        width: 21
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad949b37d106bb141a12bc2db35a4a0a
+      internalID: -294907839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_11
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 640
+        width: 21
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b61909b7d87b1429a6068c47752584
+      internalID: 1672332551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_12
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 640
+        width: 21
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f68c59d69c285449743bb3d49658c0
+      internalID: 357024133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_13
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 640
+        width: 21
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a567f3ce397e762459a422e3b8fe0bb5
+      internalID: 1185100211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_14
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 640
+        width: 21
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b234ae2eeee3b7240b1d293a8dc691af
+      internalID: 1357474561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_15
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 384
+        width: 21
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4988db9ff2581cc4092a2750a884df26
+      internalID: 865130425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_16
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 384
+        width: 22
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef2a7304ad629d41bca2b888e63d2d3
+      internalID: 1341923676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_17
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 385
+        width: 22
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6f91fa3d5d0ac4ebd8a4aa787810a5
+      internalID: 1158170805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_18
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 385
+        width: 22
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321e477318756d24e8def959f075dada
+      internalID: 1322921871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_19
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 385
+        width: 22
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800529fbf1e16124eb71abb0dbbaf6bd
+      internalID: -1026983796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_20
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 129
+        width: 22
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6871fc479a368b47b0a40da206d8fd3
+      internalID: 138766576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mapa_Tomou_Dano_21
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 129
+        width: 22
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10ee1c90fe25104b968df25342fdd64
+      internalID: 1591331163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +594,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mapa_Tomou_Dano_0: -1549235580
+      Mapa_Tomou_Dano_1: 1123580213
+      Mapa_Tomou_Dano_10: -294907839
+      Mapa_Tomou_Dano_11: 1672332551
+      Mapa_Tomou_Dano_12: 357024133
+      Mapa_Tomou_Dano_13: 1185100211
+      Mapa_Tomou_Dano_14: 1357474561
+      Mapa_Tomou_Dano_15: 865130425
+      Mapa_Tomou_Dano_16: 1341923676
+      Mapa_Tomou_Dano_17: 1158170805
+      Mapa_Tomou_Dano_18: 1322921871
+      Mapa_Tomou_Dano_19: -1026983796
+      Mapa_Tomou_Dano_2: 333378201
+      Mapa_Tomou_Dano_20: 138766576
+      Mapa_Tomou_Dano_21: 1591331163
+      Mapa_Tomou_Dano_3: -1037857284
+      Mapa_Tomou_Dano_4: -2071074706
+      Mapa_Tomou_Dano_5: -1621204174
+      Mapa_Tomou_Dano_6: -135547072
+      Mapa_Tomou_Dano_7: 1779327220
+      Mapa_Tomou_Dano_8: -18550299
+      Mapa_Tomou_Dano_9: -1475626012
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

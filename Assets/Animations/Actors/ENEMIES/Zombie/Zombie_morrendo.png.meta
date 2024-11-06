@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +121,1456 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Zombie_morrendo_0
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 2429
+        width: 20
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d97a5013784cd947845924805d1462e
+      internalID: 1951649927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_1
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 2429
+        width: 20
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8e25d715bf11a4ab8ff6f41b9b1dcd
+      internalID: 1150883562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_2
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 2429
+        width: 21
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23236dffa2319c479a082103955b474
+      internalID: -758170765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_3
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 2429
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b7ca0fe7df05546a099b04bc943dbb
+      internalID: 298703253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_4
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 2429
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bbeeeea1469e142b9902536beb4e37
+      internalID: 644557790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_5
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 2429
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4f62b508733324c821eb8816dc416d
+      internalID: -721487186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_6
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 2429
+        width: 24
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bc51a43d5484746ac2e02ebbf161a8
+      internalID: -664394723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_7
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 2429
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310e3df1db32bc648980fa72da497a2a
+      internalID: 251644351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_8
+      rect:
+        serializedVersion: 2
+        x: 2163
+        y: 2428
+        width: 23
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5a982aa902375468e4149e59352f20
+      internalID: 1852785893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_9
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 2428
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4128a077d15d10542beb97fde9a6f409
+      internalID: -692892139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_10
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 2171
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d43c8622b537194f8989d3548ebbbe3
+      internalID: -1313771924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_11
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 2171
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9b43c8bc2b7ec4b988fc16c8e243da
+      internalID: 1348245588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_12
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 2173
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e0b784e49bc6b4ba53fb08753eec85
+      internalID: -1893191718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_13
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 2174
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1aac848929ecd4b9b00f48150c8488
+      internalID: 1375293062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_14
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 2174
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1d87f82fe175b49b753bc34ad5d9fe
+      internalID: 1187747886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_15
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 2175
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3096b0b7c20ccfc47a2378908117949b
+      internalID: 1072719120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_16
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 2175
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f1e0fb81fa7304382a4118e9eb2ead
+      internalID: 533222387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_17
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 2175
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c0974d6d91f5a40a5db71809dccfe0
+      internalID: -2074913978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_18
+      rect:
+        serializedVersion: 2
+        x: 2154
+        y: 2176
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f08c6b60d43504580426cb1eba5544
+      internalID: -92031984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_19
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 2176
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a27d44327b77047a11c3772f481b2b
+      internalID: 1862359979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_20
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1921
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d12151caeff30429bf82d4f353c281
+      internalID: 1873097839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_21
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1923
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c89fe4116ae5d4f807944f84ffaaa2
+      internalID: -1393471502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_22
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1923
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0dfa2aacfa4c648b70eaa9bd5327f5
+      internalID: -1889031028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_23
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1924
+        width: 51
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d9d7894a7057e47a5677e71348b068
+      internalID: -1673625928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_24
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1924
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8839131997e6594d83d61a08967b926
+      internalID: 627602574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_25
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 1924
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9b1e76e1824ab4e87de0dbfb992a49
+      internalID: 716247017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_26
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1924
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7d34d4151baf84191ea01e945c406f
+      internalID: -1250882660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_27
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1925
+        width: 59
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c0ab8c46f9e334bba98713a05a4de2
+      internalID: 265871194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_28
+      rect:
+        serializedVersion: 2
+        x: 2146
+        y: 1925
+        width: 59
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b5a3269c4291c4e8356091f9e59dfa
+      internalID: -905478016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_29
+      rect:
+        serializedVersion: 2
+        x: 2401
+        y: 1926
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f24631dd597094c814c2c4564d9a73
+      internalID: -1453895314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1669
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1943a60b8ed154ab34922b3b48c8d9
+      internalID: 632793177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_31
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1669
+        width: 61
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a329e534fe0f9b408e25ce157c1e40c
+      internalID: -411977676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_32
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1669
+        width: 61
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43dbedb6dbb46b479b92d20d173aa19
+      internalID: -952957769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_33
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1669
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940d2bb963640ce43bf93337d02bafb9
+      internalID: 1163930889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_34
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1669
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f1c15ae1eb2314dbdf47c9157e58db
+      internalID: 792459980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_35
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 1669
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df0db929e4a4e1479a21e9917e0d06c
+      internalID: -251877325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_36
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 1668
+        width: 64
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23db6df90f54ec4f82828bb67824a66
+      internalID: 24859344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_37
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 1668
+        width: 63
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ecbeee4bc954a40b6d82e927524e44
+      internalID: 2090334750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_38
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 1668
+        width: 65
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa29348b0d319641944a20d290f5b30
+      internalID: -1249081118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_39
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 1668
+        width: 65
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6919272ad227032478221d79dffff85c
+      internalID: 541134125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_40
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1411
+        width: 67
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f3d8728ada8e64b976a33ec410b36e
+      internalID: 693188127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_41
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1411
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e22c7848f677824098aa6dcf12fe58b
+      internalID: 806461975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_42
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1410
+        width: 67
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68180734adae35c4480c4cbe7ceb432c
+      internalID: -1206976185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_43
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 1410
+        width: 68
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eafede43b57eb242a6b8afcd876261b
+      internalID: 1697848072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_44
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1409
+        width: 68
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517f25b29afb6cf4cb398684b5323129
+      internalID: -2075987121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_45
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 1409
+        width: 67
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6c3b926b4b03748a9fddcab63114c7
+      internalID: 592830388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_46
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 1409
+        width: 69
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113f803dc909a37409e68206462c1df5
+      internalID: 1364858589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_47
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 1408
+        width: 70
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b322a3c06f2502d43b29af03b333e540
+      internalID: 201604917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_48
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 1408
+        width: 70
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05186fa77ab6c6d49ad9c36cd9a96f38
+      internalID: -573348505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_49
+      rect:
+        serializedVersion: 2
+        x: 2398
+        y: 1408
+        width: 68
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934892415ce08ca4699ad7c664878f75
+      internalID: 641360248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_50
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1151
+        width: 69
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadfc279728d68f42825c1d19e0532a2
+      internalID: -2070659248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_51
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1151
+        width: 70
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2329180f34a63468b60463c1f4351f
+      internalID: 586167320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_52
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1151
+        width: 71
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f4d6150bafa5348bfd7e4cf82f5f63
+      internalID: 1399584172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_53
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1151
+        width: 72
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830f3ad4b65881e4ba68a64547c1c77b
+      internalID: 2033472376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_54
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1151
+        width: 71
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3357eb63333ba5439934b478fbfe8fc
+      internalID: 311732568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_55
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 1151
+        width: 73
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cab9ae99c14ef41bad3c2a6b0cf937
+      internalID: -1401323663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_56
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 1151
+        width: 74
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bf59112e019b24189927cecbcdd2fb
+      internalID: 1104728387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_57
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 1151
+        width: 74
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5dc677200b57f34fa5bbe757c7a2e0a
+      internalID: -1223993269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_58
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 1151
+        width: 75
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31da312cd5e36904dabc6e6de89d2b68
+      internalID: 1771470413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_59
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 1151
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743a2e36b4ffd384db83fee9354baccf
+      internalID: 1981705754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_60
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 895
+        width: 78
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87587e2e20911e743b97fc179b20f50e
+      internalID: 955709780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_61
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 895
+        width: 79
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4377ad3af6d211d4ca863f05b6762e78
+      internalID: -1598337300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_62
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 894
+        width: 81
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46fb564cca712f40a46547bbf99976b
+      internalID: -1301132490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_63
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 894
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c372506c1f088046bdde0ea1ebeb34f
+      internalID: -2045389854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_64
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 895
+        width: 70
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502a266436a16f2488e21edf2227640f
+      internalID: 760465960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_65
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 894
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef23f478f3100b749b153ed3dfcae4a0
+      internalID: 608493809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_66
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 895
+        width: 68
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45029218f98b0242ba8e4928cb4bfc9
+      internalID: -368084088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_67
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 895
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4192b221afa9b244d9b38eaed2d73c90
+      internalID: 575418258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zombie_morrendo_68
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 895
+        width: 69
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbae53186389e645b3363a095f51a97
+      internalID: -2078158374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +1581,76 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Zombie_morrendo_0: 1951649927
+      Zombie_morrendo_1: 1150883562
+      Zombie_morrendo_10: -1313771924
+      Zombie_morrendo_11: 1348245588
+      Zombie_morrendo_12: -1893191718
+      Zombie_morrendo_13: 1375293062
+      Zombie_morrendo_14: 1187747886
+      Zombie_morrendo_15: 1072719120
+      Zombie_morrendo_16: 533222387
+      Zombie_morrendo_17: -2074913978
+      Zombie_morrendo_18: -92031984
+      Zombie_morrendo_19: 1862359979
+      Zombie_morrendo_2: -758170765
+      Zombie_morrendo_20: 1873097839
+      Zombie_morrendo_21: -1393471502
+      Zombie_morrendo_22: -1889031028
+      Zombie_morrendo_23: -1673625928
+      Zombie_morrendo_24: 627602574
+      Zombie_morrendo_25: 716247017
+      Zombie_morrendo_26: -1250882660
+      Zombie_morrendo_27: 265871194
+      Zombie_morrendo_28: -905478016
+      Zombie_morrendo_29: -1453895314
+      Zombie_morrendo_3: 298703253
+      Zombie_morrendo_30: 632793177
+      Zombie_morrendo_31: -411977676
+      Zombie_morrendo_32: -952957769
+      Zombie_morrendo_33: 1163930889
+      Zombie_morrendo_34: 792459980
+      Zombie_morrendo_35: -251877325
+      Zombie_morrendo_36: 24859344
+      Zombie_morrendo_37: 2090334750
+      Zombie_morrendo_38: -1249081118
+      Zombie_morrendo_39: 541134125
+      Zombie_morrendo_4: 644557790
+      Zombie_morrendo_40: 693188127
+      Zombie_morrendo_41: 806461975
+      Zombie_morrendo_42: -1206976185
+      Zombie_morrendo_43: 1697848072
+      Zombie_morrendo_44: -2075987121
+      Zombie_morrendo_45: 592830388
+      Zombie_morrendo_46: 1364858589
+      Zombie_morrendo_47: 201604917
+      Zombie_morrendo_48: -573348505
+      Zombie_morrendo_49: 641360248
+      Zombie_morrendo_5: -721487186
+      Zombie_morrendo_50: -2070659248
+      Zombie_morrendo_51: 586167320
+      Zombie_morrendo_52: 1399584172
+      Zombie_morrendo_53: 2033472376
+      Zombie_morrendo_54: 311732568
+      Zombie_morrendo_55: -1401323663
+      Zombie_morrendo_56: 1104728387
+      Zombie_morrendo_57: -1223993269
+      Zombie_morrendo_58: 1771470413
+      Zombie_morrendo_59: 1981705754
+      Zombie_morrendo_6: -664394723
+      Zombie_morrendo_60: 955709780
+      Zombie_morrendo_61: -1598337300
+      Zombie_morrendo_62: -1301132490
+      Zombie_morrendo_63: -2045389854
+      Zombie_morrendo_64: 760465960
+      Zombie_morrendo_65: 608493809
+      Zombie_morrendo_66: -368084088
+      Zombie_morrendo_67: 575418258
+      Zombie_morrendo_68: -2078158374
+      Zombie_morrendo_7: 251644351
+      Zombie_morrendo_8: 1852785893
+      Zombie_morrendo_9: -692892139
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

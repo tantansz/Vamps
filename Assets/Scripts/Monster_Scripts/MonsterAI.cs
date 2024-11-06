@@ -18,9 +18,9 @@ public class MonsterAI : MonoBehaviour
     public Transform obstacleCheck;  // Ponto de verificação para detecção de obstáculos à frente
     public float obstacleCheckDistance = 0.5f;  // Distância para o monstro detectar obstáculos
 
-    public int damage = 10; // Definindo a quantidade de dano
-    public float damageInterval = 1f; // Intervalo de dano do monstro
-    private float nextDamageTime = 0f;  // Tempo para aplicar o próximo dano
+    //public int damage = 10; // Definindo a quantidade de dano
+    //public float damageInterval = 1f; // Intervalo de dano do monstro
+    //private float nextDamageTime = 0f;  // Tempo para aplicar o próximo dano
 
     private Rigidbody2D rb;  // Referência ao componente Rigidbody2D do monstro para controlar seu movimento
     private bool isChasing = false;  // Flag para verificar se o monstro está perseguindo o player
@@ -29,15 +29,21 @@ public class MonsterAI : MonoBehaviour
     
     public float patrolMinX = -5f;  // Limite mínimo
     public float patrolMaxX = 5f;   // Limite máximo 
-    private bool movingToRight = true; 
+    private bool movingToRight = true;
+
+    private Enemy enemyScript;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();  // Pega a referência ao Rigidbody2D do monstro
+        enemyScript = GetComponent<Enemy>(); //referencia do script enemy
     }
 
     void Update()
     {
+        if (enemyScript.isStunned) return;
+     
+
         // Verifica se o monstro está no chão
         isGrounded = IsGrounded();
 
@@ -69,6 +75,7 @@ public class MonsterAI : MonoBehaviour
         {
             // Move o monstro para a direita usando a velocidade de patrulha
             rb.velocity = new Vector2(speed, rb.velocity.y);
+            Flip(true);
 
             // Se o monstro alcançar o limite máximo da patrulha, inverte a direção
             if (transform.position.x >= patrolMaxX)
@@ -80,6 +87,7 @@ public class MonsterAI : MonoBehaviour
         {
             // Move o monstro para a esquerda usando a velocidade de patrulha
             rb.velocity = new Vector2(-speed, rb.velocity.y);
+            Flip(false);
 
             // Se o monstro alcançar o limite mínimo da patrulha, inverte a direção
             if (transform.position.x <= patrolMinX)
@@ -107,6 +115,11 @@ public class MonsterAI : MonoBehaviour
         // Move o monstro em direção ao player na direção calculada
         rb.velocity = new Vector2(direction.x * speed, rb.velocity.y);
 
+        if(direction.x > 0)
+            Flip(true);
+        if (direction.x < 0)
+            Flip(false);
+
         // Se o monstro está no chão e há um obstáculo à frente, ele pula
         if (isGrounded && IsObstacleAhead())
         {
@@ -122,6 +135,11 @@ public class MonsterAI : MonoBehaviour
         // Move o monstro de volta para o ponto de patrulha mais próximo
         Vector2 direction = new Vector2(closestPointX - transform.position.x, 0).normalized;
         rb.velocity = new Vector2(direction.x * returnSpeed, rb.velocity.y);
+
+        if (direction.x > 0)
+            Flip(true);
+        else if (direction.x < 0)
+            Flip(false);
 
         // Se o monstro está no chão e há um obstáculo à frente, ele pula
         if (isGrounded && IsObstacleAhead())
@@ -150,35 +168,19 @@ public class MonsterAI : MonoBehaviour
     {
         return Physics2D.Raycast(obstacleCheck.position, transform.right, obstacleCheckDistance, groundLayer);
     }
-///////////////////////////////////////////////////////////////////////////
 
-///////////////////////////DANO NO PLAYER///////////////////////////////
-    private void OnCollisionStay2D(Collision2D collision)
+    void Flip(bool isMovingRight)
     {
-        
-        if (collision.gameObject.CompareTag("Player") && Time.time >= nextDamageTime)
+        Vector3 localScale = transform.localScale;
+        if(isMovingRight && localScale.x > 0)
         {
-           ControlaVida controlaVida = collision.gameObject.GetComponent<ControlaVida>();
-            if (controlaVida != null)
-            {
-               controlaVida.TomarDano(damage);  
-                nextDamageTime = Time.time + damageInterval;  // Define o tempo para o próximo dano
-            }
+            localScale.x *= -1;
         }
+        else if (!isMovingRight && localScale.x < 0)
+        {
+            localScale.x *= -1;
+        }
+        transform.localScale = localScale;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            animator.SetTrigger("Attack"); // teste de animação
-            ControlaVida controlaVida = collision.gameObject.GetComponent<ControlaVida>();
-           if (controlaVida != null)
-          {
-              controlaVida.TomarDano(damage);  
-          }
-       }
-   }
-///////////////////////////////////////////////////////////////////////////
 }

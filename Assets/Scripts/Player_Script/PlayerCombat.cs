@@ -43,7 +43,9 @@ public class PlayerCombat : MonoBehaviour
         
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            Vector2 knockbackDirection = (enemy.transform.position - transform.position).normalized;
+
+            enemy.GetComponent<Enemy>().TakeDamage(attackDamage, knockbackDirection);
         }
     }
 
