@@ -155,13 +155,13 @@ public class MonsterAI : MonoBehaviour
 ///////////////////////////DANO NO PLAYER///////////////////////////////
     private void OnCollisionStay2D(Collision2D collision)
     {
-        // Se o monstro continuar colidindo com o player, causar dano contínuo
+        
         if (collision.gameObject.CompareTag("Player") && Time.time >= nextDamageTime)
         {
-            ControlaVida controlaVida = collision.gameObject.GetComponent<ControlaVida>();
+           ControlaVida controlaVida = collision.gameObject.GetComponent<ControlaVida>();
             if (controlaVida != null)
             {
-                controlaVida.TomarDano(damage);  
+               controlaVida.TomarDano(damage);  
                 nextDamageTime = Time.time + damageInterval;  // Define o tempo para o próximo dano
             }
         }
@@ -169,16 +169,16 @@ public class MonsterAI : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Se o monstro colidir com o player, causar dano
+        
         if (collision.gameObject.CompareTag("Player"))
         {
             animator.SetTrigger("Attack"); // teste de animação
             ControlaVida controlaVida = collision.gameObject.GetComponent<ControlaVida>();
-            if (controlaVida != null)
-            {
-                controlaVida.TomarDano(damage);  
-            }
-        }
-    }
+           if (controlaVida != null)
+          {
+              controlaVida.TomarDano(damage);  
+          }
+       }
+   }
 ///////////////////////////////////////////////////////////////////////////
 }

@@ -15,7 +15,7 @@ public class ControlaVida : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)) // Recupera a vida apertando F
+        if (Input.GetKeyDown(KeyCode.F)) //toma dano apertando F
         {
             TomarDano(10.0f);
         }
