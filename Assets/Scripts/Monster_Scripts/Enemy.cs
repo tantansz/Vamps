@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 100;
     private int currentHealth;
 
+    [SerializeField] private AudioClip[] damageSoundClips;
+
     public Animator animator; //referencia de animação
     public float knockbackForce = 5f; //Força de knockback aplicada ao monstro
     private Rigidbody2D rb;
@@ -26,6 +28,8 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy took damage!");
 
         animator.SetTrigger("TakeDamage");
+
+        SFXManager.instance.PlayRandomSFXClip(damageSoundClips, transform, 1f);
 
         //Vector2 knockbackDirection = (transform.position - attackerPosition.position).normalized;
         rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse); //Aplica o knockback 
