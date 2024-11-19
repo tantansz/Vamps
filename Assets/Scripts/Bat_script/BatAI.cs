@@ -115,7 +115,7 @@ public class BatAI : MonoBehaviour
         // Define a animação de idle para a patrulha
         if (animator != null)
         {
-            animator.SetTrigger("Idle");
+            animator.SetTrigger("idle");
         }
     }
     ///////////////////////////////////////////////////////////////////////////
@@ -138,7 +138,7 @@ public class BatAI : MonoBehaviour
         // Define a animação de corrida para a perseguição
         if (animator != null)
         {
-            animator.SetTrigger("Run");
+            animator.SetTrigger("corrida");
         }
     }
 
