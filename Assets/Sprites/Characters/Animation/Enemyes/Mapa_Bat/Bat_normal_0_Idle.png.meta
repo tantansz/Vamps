@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,469 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1947
+        width: 54
+        height: 36
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd58965190c0794ea109ff62c5b0470
+      internalID: -225532711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1947
+        width: 51
+        height: 35
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0a2571046e4e642b9b6a5a2af1f1ac
+      internalID: -1408965060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1947
+        width: 48
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5baf2288e5c1bda46bbc3d2854fa4cdb
+      internalID: -171061036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1947
+        width: 45
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02581e862f0d6874d9704b909cea10d1
+      internalID: -540643582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1947
+        width: 37
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36e921729add364abe036f2a91b3cc6
+      internalID: 1183858198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1947
+        width: 32
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb467a343259d6a4fa9d3c8c6aaee930
+      internalID: 645359354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 1947
+        width: 29
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bae2fe688a6d04bab08b2b86a98d34
+      internalID: 1940266711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1947
+        width: 29
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f473af22ca83b47b5e48ab7c32ffcf
+      internalID: -1864755527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1691
+        width: 30
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d63820e9aaf4e140b5372ecd138923e
+      internalID: -1222258431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1691
+        width: 31
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2787245eb7bd44b8314c3a076784e2
+      internalID: 846012765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1691
+        width: 30
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48930129176469146a356e3765f0b091
+      internalID: 1426051117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1691
+        width: 29
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ebae0b5c3d2fc4c85e4f2400e00d7a
+      internalID: -614590887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 1691
+        width: 29
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ca4511fd5a23045851d638aec1923b
+      internalID: 804531185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1691
+        width: 32
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee6505de55d40f4694760f5939dc3a6
+      internalID: -700536006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 1691
+        width: 37
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8311266e90dcb7a4c8472f97f888aa36
+      internalID: 2101390930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 1691
+        width: 45
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a50602a556d924395bdd07e9cec28f
+      internalID: 1049410407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1435
+        width: 48
+        height: 34
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fe43ac41c057344b053da001e8f2f3
+      internalID: 938613462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1435
+        width: 51
+        height: 35
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e902602efc5f7247a4f8296340403e2
+      internalID: -147662098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1435
+        width: 54
+        height: 36
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189d4145c1b5fff458929a1c6b08fc75
+      internalID: 1676356430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 1435
+        width: 59
+        height: 37
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3b9d504b99a4f4fa6b4b5e80a5d501
+      internalID: -680979697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1435
+        width: 62
+        height: 37
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23f164f7867786489b07f800bdd934f
+      internalID: 1202327819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat_normal_0_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1435
+        width: 61
+        height: 35
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989de7866c68abb4d9bafd9378a29554
+      internalID: -1052058619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +594,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bat_normal_0_Idle_0: -225532711
+      Bat_normal_0_Idle_1: -1408965060
+      Bat_normal_0_Idle_10: 1426051117
+      Bat_normal_0_Idle_11: -614590887
+      Bat_normal_0_Idle_12: 804531185
+      Bat_normal_0_Idle_13: -700536006
+      Bat_normal_0_Idle_14: 2101390930
+      Bat_normal_0_Idle_15: 1049410407
+      Bat_normal_0_Idle_16: 938613462
+      Bat_normal_0_Idle_17: -147662098
+      Bat_normal_0_Idle_18: 1676356430
+      Bat_normal_0_Idle_19: -680979697
+      Bat_normal_0_Idle_2: -171061036
+      Bat_normal_0_Idle_20: 1202327819
+      Bat_normal_0_Idle_21: -1052058619
+      Bat_normal_0_Idle_3: -540643582
+      Bat_normal_0_Idle_4: 1183858198
+      Bat_normal_0_Idle_5: 645359354
+      Bat_normal_0_Idle_6: 1940266711
+      Bat_normal_0_Idle_7: -1864755527
+      Bat_normal_0_Idle_8: -1222258431
+      Bat_normal_0_Idle_9: 846012765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
