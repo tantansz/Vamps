@@ -23026,6 +23026,9 @@ MonoBehaviour:
   chaseSpeed: 4
   detectionRange: 5
   player: {fileID: 670204387}
+  rockPrefab: {fileID: 7328313411658679379, guid: 52f13f45e3362d640ac01da5b0484307, type: 3}
+  throwForce: 5
+  cooldownTime: 2
 --- !u!1 &1596871526 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3724080940698235779, guid: fa05b28328ef339478a13118bfafceb8, type: 3}
@@ -47256,7 +47259,7 @@ Transform:
   m_GameObject: {fileID: 7556320799101221508}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 79.560616, y: -8.258146, z: -10}
+  m_LocalPosition: {x: 79.56055, y: -8.258146, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
