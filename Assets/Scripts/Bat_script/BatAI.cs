@@ -1,150 +1,203 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BatAI : MonoBehaviour
 {
-    public Transform player;  
-    public Animator animator; 
+    public Transform player;  // Referência ao player
+    public Transform groundCheck;  // Objeto abaixo do morcego para verificar o chão
+    public float groundCheckRadius = 0.2f; // Raio para verificar o chão
+    public LayerMask groundLayer; // Camada do chão para detectar colisão
 
-    public float speed = 2f;  // Velocidade de movimento do morcego
-    public float chaseRange = 5f;  // Distância máxima para perseguir o player
-    public float returnSpeed = 1f;  // Velocidade de retorno ao ponto de patrulha quando o player escapar
+    public float patrolSpeed = 2f;  // Velocidade de patrulha
+    public float diveSpeed = 8f;  // Velocidade do rasante
+    public float chaseRange = 5f;  // Distância para detectar o player
+    public float diveCooldown = 2f;  // Tempo entre rasantes
 
-    public float patrolMinX = -5f;  // Limite mínimo da patrulha
-    public float patrolMaxX = 5f;   // Limite máximo da patrulha
-    public float patrolMinY = 2f;   // Limite mínimo no eixo Y para simular voo
-    public float patrolMaxY = 5f;   // Limite máximo no eixo Y para simular voo
-    private bool movingToRight = true; // Direção inicial na patrulha
-    private bool movingUp = true; // Controle do movimento vertical
+    public float patrolMinX = -5f;  // Limite mínimo no eixo X
+    public float patrolMaxX = 5f;   // Limite máximo no eixo X
+    public float patrolMaxY = 5f;   // Altura máxima de patrulha
 
-    private Rigidbody2D rb;  // Referência ao Rigidbody2D do morcego
-    private bool isChasing = false;  // Flag para verificar se o morcego está perseguindo o player
+    public int damageToPlayer = 20; // Dano que o morcego causa ao player
+
+    private Rigidbody2D rb;  // Referência ao Rigidbody2D
+    private bool isDiving = false;  // Flag para verificar se está realizando o rasante
+    private bool isReturning = false;  // Flag para verificar se está retornando à patrulha
+    private bool isOnCooldown = false;  // Flag para controlar o cooldown do rasante
+    private bool movingToRight = true; // Direção horizontal inicial
+    private Vector3 diveDirection;  // Direção do rasante
+
+    private Vector3 initialScale; // Escala inicial para o Flip
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.freezeRotation = true; 
+        rb.freezeRotation = true; // Impede que o morcego gire
+        initialScale = transform.localScale; // Salva a escala inicial
     }
 
     void Update()
     {
-        // Calcula a distância entre o morcego e o player
+        if (isDiving || isReturning || isOnCooldown) return; // Se está ocupado, não executa outras ações
+
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        // Se o player estiver dentro da distância de perseguição, o morcego começa a perseguir
+        // Se o player estiver no alcance, inicia o rasante
         if (distanceToPlayer < chaseRange)
         {
-            ChasePlayer();
+            StartDive();
         }
-        // Se o morcego estava perseguindo, mas o player escapou, ele retorna à patrulha
-        else if (isChasing)
-        {
-            ReturnToPatrol();
-        }
-        // Se o morcego não está perseguindo, ele patrulha entre os limites definidos
         else
         {
-            Patrol();
+            Patrol(); // Caso contrário, continua patrulhando
+        }
+    }
+
+    ///////////////////////////RASANTE//////////////////////////////////////////
+    void StartDive()
+    {
+        isDiving = true; // Ativa o estado de rasante
+        diveDirection = (player.position - transform.position).normalized; // Calcula a direção em direção ao player
+
+        // Ajusta a direção do morcego para o player
+        if ((player.position.x > transform.position.x && !movingToRight) || (player.position.x < transform.position.x && movingToRight))
+        {
+            Flip(player.position.x > transform.position.x);
         }
 
-        // Corrige a velocidade para evitar que o morcego seja empurrado descontroladamente
-        LimitVelocity();
+        StartCoroutine(DiveCoroutine());
     }
+
+    IEnumerator DiveCoroutine()
+    {
+        while (isDiving)
+        {
+            rb.velocity = diveDirection * diveSpeed; // Move o morcego na direção do rasante
+
+            // Verifica se o GroundCheck está tocando o chão
+            if (IsNearGround())
+            {
+                isDiving = false; // Finaliza o rasante
+                rb.velocity = Vector2.zero; // Para o movimento
+                StartReturn(); // Inicia o retorno ao ponto superior
+            }
+
+            yield return null;
+        }
+    }
+
+    ///////////////////////////DANO AO PLAYER///////////////////////////////////
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!isDiving) return; // Apenas aplica dano durante o rasante
+
+        // Verifica se o objeto colidido é o player
+        if (collision.collider.CompareTag("Player"))
+        {
+            // Acessa o script de vida do player e aplica dano
+            ControlaVida playerHealth = collision.collider.GetComponent<ControlaVida>();
+            if (playerHealth != null)
+            {
+                playerHealth.TomarDano(damageToPlayer); // Aplica o dano ao player
+                Debug.Log("Morcego causou dano ao player!");
+            }
+
+            // Finaliza o rasante e inicia o retorno
+            isDiving = false;
+            rb.velocity = Vector2.zero;
+            StartReturn();
+        }
+    }
+    ///////////////////////////////////////////////////////////////////////////
+
+    ///////////////////////////RETORNO AO PONTO SUPERIOR/////////////////////////
+    void StartReturn()
+    {
+        isReturning = true; // Ativa o estado de retorno
+        Vector3 returnPoint = new Vector3(transform.position.x, patrolMaxY, transform.position.z); // Define o ponto superior de retorno
+        StartCoroutine(ReturnCoroutine(returnPoint));
+    }
+
+    IEnumerator ReturnCoroutine(Vector3 returnPoint)
+    {
+        while (isReturning)
+        {
+            // Move o morcego para o ponto superior de patrulha
+            Vector3 direction = (returnPoint - transform.position).normalized;
+            rb.velocity = direction * patrolSpeed;
+
+            // Se atingir o ponto superior, termina o retorno
+            if (Vector3.Distance(transform.position, returnPoint) < 0.2f)
+            {
+                isReturning = false; // Finaliza o retorno
+                rb.velocity = Vector2.zero; // Para o movimento
+                isOnCooldown = true; // Ativa o cooldown
+                yield return new WaitForSeconds(diveCooldown); // Aguarda o cooldown
+                isOnCooldown = false; // Sai do cooldown
+            }
+
+            yield return null;
+        }
+    }
+    ///////////////////////////////////////////////////////////////////////////
 
     ///////////////////////////PATRULHA//////////////////////////////////////////
     void Patrol()
     {
         Vector2 velocity = rb.velocity;
 
-        // Movimento horizontal
+        // Movimentação horizontal
         if (movingToRight)
         {
-            velocity.x = speed;
-
-            // Inverte direção ao alcançar o limite
+            velocity.x = patrolSpeed;
             if (transform.position.x >= patrolMaxX)
             {
                 movingToRight = false;
+                Flip(false); // Vira para a esquerda
             }
         }
         else
         {
-            velocity.x = -speed;
-
-            // Inverte direção ao alcançar o limite
+            velocity.x = -patrolSpeed;
             if (transform.position.x <= patrolMinX)
             {
                 movingToRight = true;
+                Flip(true); // Vira para a direita
             }
         }
 
-        // Movimento vertical
-        if (movingUp)
-        {
-            velocity.y = speed;
+        // Movimentação vertical fixa
+        velocity.y = Mathf.Sin(Time.time * patrolSpeed) * patrolMaxY; // Movimento de patrulha
 
-            // Inverte direção ao alcançar o limite superior
-            if (transform.position.y >= patrolMaxY)
-            {
-                movingUp = false;
-            }
-        }
-        else
-        {
-            velocity.y = -speed;
-
-            // Inverte direção ao alcançar o limite inferior
-            if (transform.position.y <= patrolMinY)
-            {
-                movingUp = true;
-            }
-        }
-
-        // Aplica a velocidade final ao Rigidbody
         rb.velocity = velocity;
     }
     ///////////////////////////////////////////////////////////////////////////
 
-    /////////////////////////PERSEGUIÇÃO E RETORNO CASO NÃO VEJA MAIS O PLAYER///////////////////////////
-    void ChasePlayer()
+    ///////////////////////////DETECÇÃO DO CHÃO (GROUND CHECK)///////////////////
+    bool IsNearGround()
     {
-        isChasing = true;
-
-        // Move o morcego em direção ao player
-        Vector3 direction = (player.position - transform.position).normalized;
-        rb.velocity = direction * speed;
+        // Verifica se o GroundCheck está colidindo com o chão
+        return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
+    ///////////////////////////////////////////////////////////////////////////
 
-    void ReturnToPatrol()
+    ///////////////////////////FLIP///////////////////////////////////////////
+    void Flip(bool isMovingRight)
     {
-        // Calcula o ponto central da área de patrulha
-        Vector3 patrolCenter = new Vector3((patrolMinX + patrolMaxX) / 2f, (patrolMinY + patrolMaxY) / 2f, transform.position.z);
+        movingToRight = isMovingRight;
+        Vector3 localScale = transform.localScale;
+        localScale.x = isMovingRight ? Mathf.Abs(initialScale.x) : -Mathf.Abs(initialScale.x);
+        transform.localScale = localScale;
+    }
+    ///////////////////////////////////////////////////////////////////////////
 
-        // Move o morcego suavemente em direção ao centro da patrulha
-        Vector3 direction = (patrolCenter - transform.position).normalized;
-        rb.velocity = direction * returnSpeed;
-
-        // Se o morcego estiver próximo o suficiente do centro da patrulha, ele retoma a patrulha normal
-        if (Vector3.Distance(transform.position, patrolCenter) < 0.2f)
+    ///////////////////////////DEBUG PARA GROUND CHECK/////////////////////////
+    void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
         {
-            isChasing = false; // Sai do estado de perseguição
-
-            // Reinicia o movimento de patrulha
-            movingToRight = patrolCenter.x < (patrolMinX + patrolMaxX) / 2f;
-            movingUp = patrolCenter.y < (patrolMinY + patrolMaxY) / 2f;
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
     }
-    //////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    /////////////////////////LIMITAR VELOCIDADE////////////////////////////////
-    void LimitVelocity()
-    {
-        // Limita a velocidade do morcego para evitar movimentos descontrolados
-        if (rb.velocity.magnitude > speed)
-        {
-            rb.velocity = rb.velocity.normalized * speed;
-        }
-    }
-    //////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////
 }

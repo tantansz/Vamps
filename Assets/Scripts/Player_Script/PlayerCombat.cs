@@ -43,6 +43,8 @@ public class PlayerCombat : MonoBehaviour
         
         foreach (Collider2D enemy in hitEnemies)
         {
+            Debug.Log($"Hit enemy: {enemy.name}");//tirar essa mensagem de debug depois, colocada apenas para verificar um erro 
+            
             Vector2 knockbackDirection = (enemy.transform.position - transform.position).normalized;
 
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage, knockbackDirection);
