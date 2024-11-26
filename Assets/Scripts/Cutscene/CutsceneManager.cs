@@ -80,7 +80,7 @@ public class CutsceneManager : MonoBehaviour
     private IEnumerator LoadNextScene()
     {
         yield return new WaitForSeconds(transitionDelay);
-        SceneManager.LoadScene("Treino Plataforma"); // Ajuste para o nome da sua próxima cena
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // Ajuste para o nome da sua próxima cena
     }
 
     private void ChangeBackgroundMusic()
