@@ -7,10 +7,8 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 100;
     private int currentHealth;
 
-    [SerializeField] private AudioClip[] damageSoundClips;
-
-    public Animator animator; //referencia de animação
-    public float knockbackForce = 5f; //Força de knockback aplicada ao monstro
+    public Animator animator; //referencia de animaï¿½ï¿½o
+    public float knockbackForce = 5f; //Forï¿½a de knockback aplicada ao monstro
     private Rigidbody2D rb;
 
     public float stunDuration = 0.5f;
@@ -27,9 +25,7 @@ public class Enemy : MonoBehaviour
         currentHealth -= damage;        //Rezuz a vida do monstro
         Debug.Log("Enemy took damage!");
 
-        animator.SetTrigger("TakeDamage");
-
-        SFXManager.instance.PlayRandomSFXClip(damageSoundClips, transform, 1f);
+        //animator.SetTrigger("TakeDamage");
 
         //Vector2 knockbackDirection = (transform.position - attackerPosition.position).normalized;
         rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse); //Aplica o knockback 
@@ -47,7 +43,7 @@ public class Enemy : MonoBehaviour
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                rb.isKinematic = true;  // Torna o Rigidbody2D kinemático, ou seja, ele não é mais afetado pela física
+                rb.isKinematic = true;  // Torna o Rigidbody2D kinemï¿½tico, ou seja, ele nï¿½o ï¿½ mais afetado pela fï¿½sica
             }
             Collider2D collider = GetComponent<Collider2D>();
             if (collider != null)
@@ -70,7 +66,7 @@ public class Enemy : MonoBehaviour
         isStunned = true;
 
         rb.velocity = Vector2.zero;
-        rb.isKinematic = true; //Evita a movimentação
+        rb.isKinematic = true; //Evita a movimentaï¿½ï¿½o
 
         yield return new WaitForSeconds(stunDuration);
 
@@ -80,14 +76,15 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        animator.SetTrigger("Die");
+        //animator.SetTrigger("Die");
         Debug.Log("Enemy died!");
-
-        Invoke("DestroyEnemy", 2f);
+        Destroy(gameObject);//Retirar esse destroy depois, coloquei como teste aqui.
+        //Invoke("DestroyEnemy", 2f);
     }
 
     void DestroyOnAnimationEnd()
     {
         Destroy(gameObject);
     }
-}
+}///Tantan, comentei todas as animaÃ§Ãµes para poder verificar se era isso que estava impedindo de usar o script no bat
+///ent precisa descomentar depois, mas aparentimente esta funcionando o dano no morcego agora.
