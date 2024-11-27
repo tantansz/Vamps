@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
     public float stunDuration = 0.5f;
     public bool isStunned = false;
 
+    [SerializeField] private AudioClip[] damageSoundClips;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -26,6 +28,8 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy took damage!");
 
         //animator.SetTrigger("TakeDamage");
+
+        SFXManager.instance.PlayRandomSFXClip(damageSoundClips, transform, 1f);
 
         //Vector2 knockbackDirection = (transform.position - attackerPosition.position).normalized;
         rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse); //Aplica o knockback 

@@ -12,7 +12,9 @@ public class PlayerCombat : MonoBehaviour
 
     public int attackDamage = 40; 
     public float attackRate = 2f; 
-    private float nextAttackTime = 0f; 
+    private float nextAttackTime = 0f;
+
+    [SerializeField] private AudioClip[] attackSoundClips;
 
     void Start()
     {
@@ -37,7 +39,8 @@ public class PlayerCombat : MonoBehaviour
        
         animator.SetTrigger("Attack");
 
-        
+        SFXManager.instance.PlayRandomSFXClip(attackSoundClips, transform, 1f);
+
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         
