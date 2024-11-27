@@ -9822,13 +9822,27 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.8, y: 1.92}
+  m_DrawMode: 2
+  m_Size: {x: 61.4, y: 1.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &605260803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605260800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc394a32ee220247a46bf8b539adf3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 260979283}
+  subject: {fileID: 61974134}
 --- !u!1 &677452085
 GameObject:
   m_ObjectHideFlags: 0
@@ -22863,50 +22877,60 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886695317}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -4
-  m_Sprite: {fileID: 21300000, guid: ddc0f478442222c4bacd46653672d94e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.8, y: 1.92}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b1175f480e7ee45a8a1b2db1421094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  triggerRadius: 1.28
+--- !u!114 &1873525903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873525898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7b0dc0b6e15134d9342b9ba44bfba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueControl: {fileID: 228097646}
+  player: {fileID: 61974129}
+  backgroundMusic: {fileID: 487521883}
+  cutsceneMusic: {fileID: 8300000, guid: 1d9cac417e5d21045b75b7d0b41e5d1e, type: 3}
+  transitionDelay: 2
+  cutsceneDialogues:
+  - profile: {fileID: 21300000, guid: 3c0bbbca1e73dd845af5ef4bbe257f43, type: 3}
+    speechTxt:
+    - "Quem \xE9 voc\xEA ?!"
+    actorName: Miguel
+  - profile: {fileID: 21300000, guid: 71db839180a8e744ab205a03ea8160f1, type: 3}
+    speechTxt:
+    - Intrigante, deveras intrigante!
+    - "Voc\xEA \xE9 t\xE3o perfeito quanto o outro garoto."
+    actorName: Ser misterioso
+  - profile: {fileID: 21300000, guid: 3c0bbbca1e73dd845af5ef4bbe257f43, type: 3}
+    speechTxt:
+    - Outro GAROTO ? O Alucard ?
+    - "Cade meu irm\xE3o ? O que voc\xEA fez com ele ?"
+    actorName: Miguel
+  - profile: {fileID: 21300000, guid: 71db839180a8e744ab205a03ea8160f1, type: 3}
+    speechTxt:
+    - Hmmmm, Alucard...
+    - "Que coinciendia eu diria, ou ser\xE1 que \xE9 o destino ? Hahahaha..."
+    - "N\xE3o tem por que ficar preocupado, voc\xEA logo encontrar\xE1 seu irm\xE3o.\r\n\r"
+    actorName: Ser Misterioso
+  - profile: {fileID: 21300000, guid: 808b9a9be0efd4c42a8983648335ad55, type: 3}
+    speechTxt:
+    - O homem misterioso se aproxima de Miguel...
+    - "Paralisado, Miguel n\xE3o consegue fazer nada al\xE9m de ver aquele ser Grande
+      se aproximando dele lentamente."
+    - "O homem se curva um pouco e morde o pesco\xE7o de Miguel."
+    - "Miguel grita e perde a consci\xEAncia."
+    actorName: 
 --- !u!1 &1891160902
 GameObject:
   m_ObjectHideFlags: 0
@@ -28519,3 +28543,7 @@ SceneRoots:
   - {fileID: 1268520935}
   - {fileID: 1130659688}
   - {fileID: 1927867972}
+  - {fileID: 427537380}
+  - {fileID: 1100641418}
+  - {fileID: 228097645}
+  - {fileID: 1873525901}
