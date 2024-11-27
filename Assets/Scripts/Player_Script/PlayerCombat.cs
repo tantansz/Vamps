@@ -10,9 +10,17 @@ public class PlayerCombat : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
 
+<<<<<<< HEAD
     public int attackDamage = 40;
     public float attackRate = 2f;
     private float nextAttackTime = 0f;
+=======
+    public int attackDamage = 40; 
+    public float attackRate = 2f; 
+    private float nextAttackTime = 0f;
+
+    [SerializeField] private AudioClip[] attackSoundClips;
+>>>>>>> origin/BigLeo
 
     void Start()
     {
@@ -36,7 +44,12 @@ public class PlayerCombat : MonoBehaviour
         // Ativa a animação de ataque
         animator.SetTrigger("Attack");
 
+<<<<<<< HEAD
         // Detecta inimigos no raio de ataque
+=======
+        SFXManager.instance.PlayRandomSFXClip(attackSoundClips, transform, 1f);
+
+>>>>>>> origin/BigLeo
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         // Itera pelos inimigos atingidos
