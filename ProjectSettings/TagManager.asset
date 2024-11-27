@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Agua
+  - Entrada
+  - Saida
   layers:
   - Default
   - TransparentFX
@@ -13,9 +16,9 @@ TagManager:
   - UI
   - Ground
   - Enemy
-  - 
-  - 
-  - 
+  - Agua
+  - Fora
+  - Dentro
   - 
   - 
   - 
@@ -44,6 +47,12 @@ TagManager:
   - name: Player
     uniqueID: 3833072255
     locked: 0
+  - name: Background
+    uniqueID: 1880410843
+    locked: 0
   - name: Ground
     uniqueID: 49886149
+    locked: 0
+  - name: Foreground
+    uniqueID: 1337906493
     locked: 0
