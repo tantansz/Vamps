@@ -1,22 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Collections; // Necessário para usar IEnumerator
+
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BarraDeVida : MonoBehaviour
 {
-    public Slider slider;
+    public Image barraCheia; // Referência para a imagem cheia
+    public Image barraVazia; // Opcional, para controle visual
 
-
-    public void ColocarVidaMaxima(float vida) //esta função serve para vida sempre comecar no maximo, por exemplo se eu alterar o maximo dela para 80 a barra de vida nao fica parecendo que ta faltando vida, ela se ajusta conforme eu altero.
+    public void ConfigurarVidaMaxima(float vidaMaxima)
     {
-        slider.maxValue = vida;
-        slider.value = vida;
+        AtualizarBarra(vidaMaxima, vidaMaxima); // Inicializa como cheia
     }
 
-    public void AlterarVida (float vida) // está função altera o valor do slider(que é a barra de vida), conforme ele recebe um valor no parametro vida.
+    public void AtualizarBarra(float vidaAtual, float vidaMaxima)
     {
-        slider.value = vida; 
+        float porcentagem = vidaAtual / vidaMaxima; // Calcula a porcentagem
+        barraCheia.fillAmount = porcentagem; // Atualiza o preenchimento
     }
 
+    public IEnumerator FeedbackDano()
+    {
+        // Pequeno efeito para destacar dano recebido
+        barraCheia.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        barraCheia.color = Color.white;
+    }
 }
