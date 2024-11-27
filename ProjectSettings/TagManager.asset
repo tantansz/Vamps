@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Agua
+  - Entrada
+  - Saida
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - Ground
   - Enemy
   - Agua
-  - 
-  - 
+  - Fora
+  - Dentro
   - 
   - 
   - 

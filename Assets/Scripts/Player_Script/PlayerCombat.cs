@@ -6,13 +6,13 @@ public class PlayerCombat : MonoBehaviour
 {
     public Animator animator;
 
-    public Transform attackPoint; 
-    public float attackRange = 0.5f; 
-    public LayerMask enemyLayers; 
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayers;
 
-    public int attackDamage = 40; 
-    public float attackRate = 2f; 
-    private float nextAttackTime = 0f; 
+    public int attackDamage = 40;
+    public float attackRate = 2f;
+    private float nextAttackTime = 0f;
 
     void Start()
     {
@@ -21,10 +21,9 @@ public class PlayerCombat : MonoBehaviour
 
     void Update()
     {
-        
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetMouseButtonDown(0)) 
+            if (Input.GetMouseButtonDown(0))
             {
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate;
@@ -34,22 +33,40 @@ public class PlayerCombat : MonoBehaviour
 
     void Attack()
     {
-       
+        // Ativa a animação de ataque
         animator.SetTrigger("Attack");
 
-        
+        // Detecta inimigos no raio de ataque
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
-        
+        // Itera pelos inimigos atingidos
         foreach (Collider2D enemy in hitEnemies)
         {
-            Debug.Log($"Hit enemy: {enemy.name}");//tirar essa mensagem de debug depois, colocada apenas para verificar um erro 
-            
-            Vector2 knockbackDirection = (enemy.transform.position - transform.position).normalized;
+            Debug.Log($"Objeto detectado: {enemy.name}"); // Mensagem de debug para identificar o objeto atingido
 
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage, knockbackDirection);
+            // Verifica se o inimigo possui o componente Enemy
+            Enemy enemyComponent = enemy.GetComponent<Enemy>();
+            if (enemyComponent != null)
+            {
+                // Calcula a direção do knockback e aplica o dano
+                Vector2 knockbackDirection = (enemy.transform.position - transform.position).normalized;
+                enemyComponent.TakeDamage(attackDamage, knockbackDirection);
+            }
+            else
+            {
+                // Exibe um aviso caso o objeto não tenha o componente Enemy
+                Debug.LogWarning($"O objeto {enemy.name} não possui o componente 'Enemy'. Certifique-se de que está configurado corretamente.");
+            }
         }
     }
 
-    
+    // Método para desenhar o raio de ataque no editor
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+            return;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
 }
