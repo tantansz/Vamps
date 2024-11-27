@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     public Animator animator; //referencia de anima��o
     public float knockbackForce = 5f; //For�a de knockback aplicada ao monstro
     private Rigidbody2D rb;
+    [SerializeField] private AudioClip[] damageSoundClips;
 
     public float stunDuration = 0.5f;
     public bool isStunned = false;
@@ -26,6 +27,8 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy took damage!");
 
         //animator.SetTrigger("TakeDamage");
+
+        SFXManager.instance.PlayRandomSFXClip(damageSoundClips, transform, 1f);
 
         //Vector2 knockbackDirection = (transform.position - attackerPosition.position).normalized;
         rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse); //Aplica o knockback 

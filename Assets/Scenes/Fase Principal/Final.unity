@@ -61116,6 +61116,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 115979492}
   knockbackForce: 3
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &115979491
@@ -62302,7 +62303,7 @@ Tilemap:
       - {fileID: -776201918, guid: 589dd1401ae390a4e9f5184d51c29634, type: 3}
       - {fileID: 1326841118, guid: 589dd1401ae390a4e9f5184d51c29634, type: 3}
       - {fileID: -1682391104, guid: 589dd1401ae390a4e9f5184d51c29634, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 255, y: -3, z: 0}
@@ -62989,6 +62990,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 188771994}
   knockbackForce: 3
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &188771993
@@ -63777,6 +63779,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 300188413}
   knockbackForce: 3
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &300188412
@@ -64392,6 +64395,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 353158060}
   knockbackForce: 5
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &353158058
@@ -65265,6 +65269,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 433556231}
   knockbackForce: 5
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &433556229
@@ -66132,6 +66137,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 560201302}
   knockbackForce: 3
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &560201301
@@ -66364,6 +66370,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 569837409}
   knockbackForce: 5
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &569837407
@@ -66969,6 +66976,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 607962909}
   knockbackForce: 5
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &607962907
@@ -67465,7 +67473,6 @@ GameObject:
   - component: {fileID: 774055688}
   - component: {fileID: 774055687}
   - component: {fileID: 774055686}
-  - component: {fileID: 774055685}
   - component: {fileID: 774055684}
   - component: {fileID: 774055683}
   - component: {fileID: 774055682}
@@ -67521,6 +67528,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 774055687}
+  attackSoundClips:
+  - {fileID: 8300000, guid: 7071a60f34ae0fb49931336325c38462, type: 3}
+  - {fileID: 8300000, guid: 37582225d1f93904daf1c4f19583eec3, type: 3}
+  - {fileID: 8300000, guid: e50e0aac23a04e14db1aa52b47babef3, type: 3}
   attackPoint: {fileID: 1779836773}
   attackRange: 0.5
   enemyLayers:
@@ -67553,30 +67564,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barra: {fileID: 1086999099}
---- !u!114 &774055685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774055679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cb214c452a41f1488b8b8b339de9806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 774055686}
-  animator: {fileID: 774055687}
-  runSpeed: 40
-  sprintMultiplier: 1.5
-  jumpCutMultiplier: 0.5
-  dashSpeed: 80
-  dashDuration: 0.2
-  dashCooldown: 2
-  horizontalMove: 0
-  isJumping: 0
-  isSprinting: 0
-  isDashing: 0
 --- !u!114 &774055686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68421,6 +68408,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 880138420}
   knockbackForce: 5
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &880138418
@@ -69041,6 +69029,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 924683744}
   knockbackForce: 3
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &924683743
@@ -69295,6 +69284,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 935499517}
   knockbackForce: 3
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &935499516
@@ -69766,6 +69756,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 1041133848}
   knockbackForce: 3
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &1041133847
@@ -70163,6 +70154,10 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 1050486385}
   knockbackForce: 5
+  damageSoundClips:
+  - {fileID: 8300000, guid: 4fdac995292cf1d4f8534c29480e99d9, type: 3}
+  - {fileID: 8300000, guid: 7c2ab4396eab2584bb088a1dd3e510be, type: 3}
+  - {fileID: 8300000, guid: 898ede5b36aa0494797ca4883bfb4f8e, type: 3}
   stunDuration: 0.5
   isStunned: 0
 --- !u!212 &1050486384
@@ -70779,7 +70774,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -227.99997, y: 690}
+  m_AnchoredPosition: {x: -228, y: 689.99786}
   m_SizeDelta: {x: -751, y: -493}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1086999099
@@ -71378,6 +71373,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 1159366549}
   knockbackForce: 5
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &1159366547
@@ -71731,6 +71727,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 1203230339}
   knockbackForce: 3
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &1203230338
@@ -72431,6 +72428,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 1320903504}
   knockbackForce: 3
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &1320903503
@@ -72663,6 +72661,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 1330748832}
   knockbackForce: 5
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &1330748830
@@ -73026,6 +73025,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358823331}
   m_CullTransparentMesh: 1
+--- !u!1 &1376204554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1376204555}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1376204555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376204554}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 81.115486, y: 17.818817, z: -0.6751039}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1411883931}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1379169843
 GameObject:
   m_ObjectHideFlags: 0
@@ -73214,6 +73245,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 1401730869}
   knockbackForce: 5
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &1401730867
@@ -73414,6 +73446,80 @@ MonoBehaviour:
   patrolMaxX: 395
   patrolMaxY: 5
   damageToPlayer: 20
+--- !u!1 &1411883930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1411883931}
+  - component: {fileID: 1411883932}
+  - component: {fileID: 1411883933}
+  m_Layer: 0
+  m_Name: SFXManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1411883931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411883930}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1376204555}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1411883932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411883930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0977881f8531ac4e86b8caf9611b868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SFXObject: {fileID: 4052699618122600521, guid: 522bc73e6c86e27418d8a3e1b36b598d, type: 3}
+  pm: {fileID: 1411883933}
+--- !u!114 &1411883933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411883930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cb214c452a41f1488b8b8b339de9806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 774055686}
+  animator: {fileID: 774055687}
+  walkSoundClip: {fileID: 8300000, guid: 72a2b22f3b21ad146af03967c42c5f5d, type: 3}
+  runSpeed: 40
+  sprintMultiplier: 1.5
+  jumpCutMultiplier: 0.5
+  dashSpeed: 80
+  dashDuration: 0.2
+  dashCooldown: 2
+  horizontalMove: 0
+  isJumping: 0
+  isSprinting: 0
+  isDashing: 0
+  playingSFX: 0
+  isWalking: 0
 --- !u!1 &1413460350
 GameObject:
   m_ObjectHideFlags: 0
@@ -73614,6 +73720,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 1439419564}
   knockbackForce: 3
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &1439419563
@@ -74430,6 +74537,10 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 1613360465}
   knockbackForce: 3
+  damageSoundClips:
+  - {fileID: 8300000, guid: 4fdac995292cf1d4f8534c29480e99d9, type: 3}
+  - {fileID: 8300000, guid: 7c2ab4396eab2584bb088a1dd3e510be, type: 3}
+  - {fileID: 8300000, guid: 898ede5b36aa0494797ca4883bfb4f8e, type: 3}
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &1613360464
@@ -76738,6 +76849,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 2078609262}
   knockbackForce: 5
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &2078609260
@@ -77010,6 +77122,7 @@ MonoBehaviour:
   maxHealth: 100
   animator: {fileID: 2107865072}
   knockbackForce: 5
+  damageSoundClips: []
   stunDuration: 0.5
   isStunned: 0
 --- !u!114 &2107865070
@@ -77299,6 +77412,7 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1376204555}
   - {fileID: 774055680}
   - {fileID: 1059262073}
   - {fileID: 1400297496}

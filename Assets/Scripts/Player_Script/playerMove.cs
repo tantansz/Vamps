@@ -7,6 +7,7 @@ public class playerMove : MonoBehaviour
    #region Variaveis
     public CharacterController2D controller;
     public Animator animator;
+    [SerializeField] private AudioClip walkSoundClip;
 
     public float runSpeed = 40f;
     public float sprintMultiplier = 1.5f; // Multiplicador de velocidade para correr ao pressionar Shift
@@ -31,6 +32,9 @@ public class playerMove : MonoBehaviour
 
     bool hasAirDashed = false; // Flag para verificar se o dash no ar já foi utilizado
     float dashCooldownTimer = 0f; // Timer para controlar o cooldown do dash no chão
+
+    public bool playingSFX = false;
+    public bool isWalking = false;
     #endregion
 
     #region Update
@@ -56,6 +60,16 @@ public class playerMove : MonoBehaviour
     void FixedUpdate()
     {
         ApplyMovement();
+
+        if(horizontalMove != 0f && !isDashing && !isJumping && !isSprinting)
+        {
+            isWalking = true;
+            SFXManager.instance.PlaySFXClip(walkSoundClip, transform, 1f);
+        }
+        else
+        {
+            isWalking = false;
+        }
     }
     #endregion
 
@@ -85,6 +99,8 @@ public class playerMove : MonoBehaviour
         // Define a velocidade de movimento com base no estado (normal, corrida rápida ou dash)
         float currentSpeed = isDashing ? dashSpeed : (isSprinting ? runSpeed * sprintMultiplier : runSpeed);
         horizontalMove = Input.GetAxisRaw("Horizontal") * currentSpeed;
+
+
     }
 
     void HandleJumpInput()

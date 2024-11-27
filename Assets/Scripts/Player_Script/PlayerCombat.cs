@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
     public Animator animator;
+    [SerializeField] private AudioClip[] attackSoundClips;
 
     public Transform attackPoint;
     public float attackRange = 0.5f;
@@ -26,6 +27,7 @@ public class PlayerCombat : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 Attack();
+                SFXManager.instance.PlayRandomSFXClip(attackSoundClips, transform, 1f);
                 nextAttackTime = Time.time + 1f / attackRate;
             }
         }
