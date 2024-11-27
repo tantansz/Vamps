@@ -21,10 +21,6 @@ public class PlayerCombat : MonoBehaviour
     private float nextAttackTime = 0f;
 
     private Rigidbody2D rb; // Referência ao Rigidbody para controle de movimento
-   
-    
-
-    
 
     void Start()
     {

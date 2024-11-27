@@ -1,159 +1,128 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class ArakBehaviour : MonoBehaviour
+public class ArakiAI : MonoBehaviour
 {
-    public float patrolMin; // Limite mínimo da patrulha
-    public float patrolMax; // Limite máximo da patrulha
-    public float patrolSpeed = 2f; // Velocidade durante a patrulha
-    public float chaseSpeed = 4f; // Velocidade durante a perseguição
-    public float detectionRange = 5f; // Alcance de detecção do jogador
     public Transform player; // Referência ao jogador
-    public GameObject rockPrefab; // Prefab básico da pedra
-    public float throwForce = 5f; // Força inicial do lançamento
-    public float cooldownTime = 2f; // Tempo de recarga entre os ataques
+    public GameObject rockPrefab; // Prefab da pedra
+    public Animator animator; // Animator para as animações do Araki
 
-    private bool movingRight = true; // Direção da patrulha
-    private bool isChasing = false; // Estado atual
-    private float lastAttackTime; // Tempo do último ataque
-    private Rigidbody2D rb; // Referência ao Rigidbody
-    private float initialY; // Posição inicial no eixo Y
+    public float patrolMinX = 90f; // Limite mínimo da patrulha
+    public float patrolMaxX = 100f; // Limite máximo da patrulha
+    public float patrolSpeed = 2f; // Velocidade de patrulha
+    public float chaseSpeed = 3f; // Velocidade de perseguição
+
+    public float detectionRange = 10f; // Alcance de detecção do jogador
+    public float attackCooldown = 2f; // Tempo entre ataques
+    public float attackRange = 10f; // Alcance para atacar o jogador
+
+    private bool movingToRight = true; // Controle da direção da patrulha
+    private bool isChasing = false; // Flag para indicar se está perseguindo
+    private float lastAttackTime = 0f; // Tempo do último ataque
+    private Vector3 lastPlayerPosition; // Última posição do jogador no momento do ataque
+
+    private Rigidbody2D rb; // Referência ao Rigidbody2D do Araki
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.isKinematic = true; // Movimento controlado exclusivamente pelo script
-        initialY = transform.position.y; // Salva a posição inicial no eixo Y
+        rb.freezeRotation = true; // Bloqueia a rotação
     }
 
     void Update()
     {
-        float playerDistance = Vector3.Distance(transform.position, player.position);
+        // Calcula a distância até o jogador
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if (playerDistance <= detectionRange)
+        // Lógica de perseguição e ataque
+        if (distanceToPlayer < detectionRange)
         {
-            // Jogador dentro do alcance: iniciar perseguição
-            isChasing = true;
-
-            if (Time.time >= lastAttackTime + cooldownTime)
-            {
-                LaunchRock(player.position);
-                lastAttackTime = Time.time; // Atualiza o tempo do último ataque
-            }
+            ChasePlayer(distanceToPlayer);
         }
         else
         {
-            // Jogador fora do alcance: voltar para patrulha
-            isChasing = false;
-        }
-
-        if (isChasing)
-        {
-            ChasePlayer();
-        }
-        else
-        {
+            // Patrulha entre os limites
             Patrol();
         }
-
-        // Garantir que o Arak permaneça no chão
-        transform.position = new Vector3(transform.position.x, initialY, transform.position.z);
     }
 
+    /////////////////////////PATRULHA///////////////////////////////////////////
     void Patrol()
     {
-        if (movingRight)
+        // Move para a direita ou esquerda baseado na direção
+        if (movingToRight)
         {
-            transform.position += Vector3.right * patrolSpeed * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(patrolMaxX, transform.position.y, transform.position.z), patrolSpeed * Time.deltaTime);
 
-            if (transform.position.x >= patrolMax)
+            // Chegou ao limite máximo, inverte a direção
+            if (transform.position.x >= patrolMaxX)
             {
-                movingRight = false;
-                Flip();
+                movingToRight = false;
+                Flip(false);
             }
         }
         else
         {
-            transform.position += Vector3.left * patrolSpeed * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(patrolMinX, transform.position.y, transform.position.z), patrolSpeed * Time.deltaTime);
 
-            if (transform.position.x <= patrolMin)
+            // Chegou ao limite mínimo, inverte a direção
+            if (transform.position.x <= patrolMinX)
             {
-                movingRight = true;
-                Flip();
+                movingToRight = true;
+                Flip(true);
             }
         }
     }
 
-    void ChasePlayer()
+    /////////////////////////PERSEGUIÇÃO E ATAQUE///////////////////////////////
+    void ChasePlayer(float distanceToPlayer)
     {
-        float directionX = (player.position.x - transform.position.x);
-        directionX = directionX > 0 ? 1 : -1; // Normaliza o valor para direita ou esquerda
+        isChasing = true;
 
-        transform.position += new Vector3(directionX * chaseSpeed * Time.deltaTime, 0, 0);
-
-        // Flip baseado na direção do movimento
-        if (directionX > 0 && !movingRight)
+        if (distanceToPlayer > attackRange)
         {
-            movingRight = true;
-            Flip();
+            // Persegue o jogador
+            Vector3 direction = (player.position - transform.position).normalized;
+            transform.position += direction * chaseSpeed * Time.deltaTime;
+
+            // Atualiza a direção do Araki
+            Flip(direction.x > 0);
         }
-        else if (directionX < 0 && movingRight)
+        else
         {
-            movingRight = false;
-            Flip();
+            // Está no alcance de ataque
+            AttackPlayer();
         }
     }
 
-    void LaunchRock(Vector3 targetPosition)
+    void AttackPlayer()
     {
-       // Cria a pedra como um prefab na posição do Arak
-    GameObject rock = Instantiate(rockPrefab, transform.position, Quaternion.identity);
-    Rigidbody2D rockRb = rock.GetComponent<Rigidbody2D>();
+        // Verifica o cooldown de ataque
+        if (Time.time - lastAttackTime < attackCooldown) return;
 
-    if (rockRb != null)
-    {
-        // Calcula a distância horizontal e vertical entre o Arak e o jogador
-        Vector2 distance = targetPosition - transform.position;
+        // Armazena a última posição do jogador no momento do ataque
+        lastPlayerPosition = player.position;
 
-        // Tempo ajustado dinamicamente baseado na distância horizontal
-        float timeToTarget = Mathf.Max(Mathf.Abs(distance.x) / 5.0f, 0.5f); // Garante um tempo mínimo
+        // Dispara a animação de ataque
+        animator.SetTrigger("Attack");
 
-        // Calcula as forças horizontal e vertical
-        float horizontalForce = distance.x / timeToTarget; // Força proporcional à distância no eixo X
-        float verticalForce = (distance.y / timeToTarget) + (0.5f * Mathf.Abs(Physics2D.gravity.y) * timeToTarget); // Força no eixo Y
+        // Instancia a pedra e direciona-a para a última posição do jogador
+        Invoke("ThrowRock", 0.5f); // Lança a pedra com um pequeno delay para sincronizar com a animação
 
-        // Logs para depuração
-        Debug.Log($"Distance X: {distance.x}, Distance Y: {distance.y}");
-        Debug.Log($"Horizontal Force: {horizontalForce}");
-        Debug.Log($"Vertical Force: {verticalForce}");
-
-        // Aplica a força na pedra como velocidade inicial
-        rockRb.velocity = new Vector2(horizontalForce, verticalForce);
-    }
-    else
-    {
-        Debug.LogError("Rigidbody2D is missing on the instantiated Rock prefab.");
+        lastAttackTime = Time.time; // Atualiza o tempo do último ataque
     }
 
-    }
-    
-
-    void Flip()
+    void ThrowRock()
     {
-        // Inverte a escala no eixo X
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
+        GameObject rock = Instantiate(rockPrefab, transform.position, Quaternion.identity);
+        rock.GetComponent<Rock>().Initialize(lastPlayerPosition);
     }
 
-    private void OnDrawGizmosSelected()
+    void Flip(bool isMovingRight)
     {
-        // Visualizar o range de detecção no Editor
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, detectionRange);
-
-        // Visualizar os limites de patrulha no Editor
-        Gizmos.color = Color.blue;
-        Gizmos.DrawLine(new Vector3(patrolMin, transform.position.y, transform.position.z),
-                        new Vector3(patrolMax, transform.position.y, transform.position.z));
+        Vector3 localScale = transform.localScale;
+        localScale.x = isMovingRight ? Mathf.Abs(localScale.x) : -Mathf.Abs(localScale.x);
+        transform.localScale = localScale;
     }
 }

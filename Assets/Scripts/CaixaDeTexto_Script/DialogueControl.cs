@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,6 @@ public class DialogueControl : MonoBehaviour
     public Image profile;
     public Text speechText;
     public Text actorNameText;
-    public CutsceneManager cutsceneManager; // Referência ao CutsceneManager
 
     [Header("Settings")]
     public float typingSpeed;
@@ -17,8 +17,6 @@ public class DialogueControl : MonoBehaviour
     private int index;
 
     private Coroutine typingCoroutine;
-
-    public bool isCutsceneDialogue = false; // Indica se o diálogo faz parte de uma cutscene
 
     public void Speech(Sprite p, string[] txt, string actorName)
     {
@@ -74,11 +72,7 @@ public class DialogueControl : MonoBehaviour
         dialogueObj.SetActive(false);
         typingCoroutine = null;
 
-        // Avise ao CutsceneManager apenas se for um diálogo de cutscene
-        if (isCutsceneDialogue && cutsceneManager != null)
-        {
-            cutsceneManager.NextDialogue();
-        }
+        // Reativar movimentação do jogador
         var playerMovement = FindObjectOfType<PlayerMovement>();
         if (playerMovement != null)
         {
