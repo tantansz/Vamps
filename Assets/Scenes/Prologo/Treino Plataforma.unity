@@ -1200,7 +1200,7 @@ Tilemap:
       - {fileID: -776201918, guid: 589dd1401ae390a4e9f5184d51c29634, type: 3}
       - {fileID: 1326841118, guid: 589dd1401ae390a4e9f5184d51c29634, type: 3}
       - {fileID: -1682391104, guid: 589dd1401ae390a4e9f5184d51c29634, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 77, y: -3, z: 0}
@@ -18370,7 +18370,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9384fe969a55310498100bc070accdc7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18837,10 +18837,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a0dee12a10b7114db287a3cb96307fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 21300000, guid: 01a99c969fb46ef40a7c7debfb7d84f4, type: 3}
+  profile: {fileID: 21300000, guid: b0ec1339c59117946a20fa49245d7fae, type: 3}
   speechTxt:
   - Se passou tanto tempo desde o ataque a vila que meu cabelo cresceu hahah....
-  - "O padre t\xE1 me passando um monte de treino, ele disse que hoje seria ser um
+  - "O padre t\xE1 me passando um monte de treino, ele disse que hoje vai ser um
     percurso de plataforma"
   - "At\xE9 me deixou um papel com algumas notas!"
   - "\"Para o treino de hoje, voc\xEA vai ter que pular pelas arvores e passar por
@@ -34619,7 +34619,7 @@ MonoBehaviour:
     speechTxt:
     - "Muito bem garoto, foi dif\xEDcil ? "
     actorName: Padre Antonio
-  - profile: {fileID: 21300000, guid: 01a99c969fb46ef40a7c7debfb7d84f4, type: 3}
+  - profile: {fileID: 21300000, guid: b0ec1339c59117946a20fa49245d7fae, type: 3}
     speechTxt:
     - "S\xF3 um pouco, j\xE1 estou cansado, esse clima de Outono me deixa com muito
       sono !"

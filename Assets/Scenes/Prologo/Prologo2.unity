@@ -9597,6 +9597,90 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 260979283}
   subject: {fileID: 61974134}
+--- !u!1 &655892261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 655892263}
+  - component: {fileID: 655892262}
+  m_Layer: 0
+  m_Name: dracula_48x101
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &655892262
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655892261}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 5b691afaff835a84499748832ea110e9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.48, y: 1.01}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &655892263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655892261}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 95.62, y: 0.92, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &677452085
 GameObject:
   m_ObjectHideFlags: 0
@@ -22058,14 +22142,14 @@ MonoBehaviour:
   dialogueControl: {fileID: 228097646}
   player: {fileID: 61974129}
   backgroundMusic: {fileID: 487521883}
-  cutsceneMusic: {fileID: 8300000, guid: 1d9cac417e5d21045b75b7d0b41e5d1e, type: 3}
+  cutsceneMusic: {fileID: 8300000, guid: f948fc6a62a7e6d4db2756e8b5d8ab00, type: 3}
   transitionDelay: 2
   cutsceneDialogues:
   - profile: {fileID: 21300000, guid: 3c0bbbca1e73dd845af5ef4bbe257f43, type: 3}
     speechTxt:
     - "Quem \xE9 voc\xEA ?!"
     actorName: Miguel
-  - profile: {fileID: 21300000, guid: 71db839180a8e744ab205a03ea8160f1, type: 3}
+  - profile: {fileID: 21300000, guid: 85dafaf257358544d8b897d7a274f2fb, type: 3}
     speechTxt:
     - Intrigante, deveras intrigante!
     - "Voc\xEA \xE9 t\xE3o perfeito quanto o outro garoto."
@@ -22075,7 +22159,7 @@ MonoBehaviour:
     - Outro GAROTO ? O Alucard ?
     - "Cade meu irm\xE3o ? O que voc\xEA fez com ele ?"
     actorName: Miguel
-  - profile: {fileID: 21300000, guid: 71db839180a8e744ab205a03ea8160f1, type: 3}
+  - profile: {fileID: 21300000, guid: 85dafaf257358544d8b897d7a274f2fb, type: 3}
     speechTxt:
     - Hmmmm, Alucard...
     - "Que coinciendia eu diria, ou ser\xE1 que \xE9 o destino ? Hahahaha..."
@@ -27530,3 +27614,4 @@ SceneRoots:
   - {fileID: 1100641418}
   - {fileID: 228097645}
   - {fileID: 1873525901}
+  - {fileID: 655892263}

@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a0dee12a10b7114db287a3cb96307fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 21300000, guid: 01a99c969fb46ef40a7c7debfb7d84f4, type: 3}
+  profile: {fileID: 21300000, guid: b0ec1339c59117946a20fa49245d7fae, type: 3}
   speechTxt:
   - "Dormir no frio \xE9 a melhor coisa que tem!"
   - "Mal amanheceu e o padre j\xE1 t\xE1 me colocando para treinar."
@@ -377,13 +377,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a0dee12a10b7114db287a3cb96307fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 21300000, guid: 01a99c969fb46ef40a7c7debfb7d84f4, type: 3}
+  profile: {fileID: 21300000, guid: 7197620563fc10444a109d8bb3826886, type: 3}
   speechTxt:
   - O treino de hoje vai ser simples
   - Pressione B.E.M para atacar !
   - 'Ataque os bonecos de treino logo adiante '
   - "Ap\xF3s isso, passe perto da estatua de anjo para terminar o treinamento. "
-  actorName: Miguel
+  actorName: Padre Antonio
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -6768,7 +6768,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9384fe969a55310498100bc070accdc7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7594,7 +7594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a0dee12a10b7114db287a3cb96307fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 21300000, guid: 01a99c969fb46ef40a7c7debfb7d84f4, type: 3}
+  profile: {fileID: 21300000, guid: b0ec1339c59117946a20fa49245d7fae, type: 3}
   speechTxt:
   - "Ele n\xE3o est\xE1 na cabana... "
   - Mas deixou um bilhete
